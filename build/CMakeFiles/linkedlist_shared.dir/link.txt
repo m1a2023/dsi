@@ -1,0 +1,1 @@
+/usr/bin/clang++ -fPIC -g -shared -Wl,-soname,liblinkedlist_shared.so -o liblinkedlist_shared.so CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o 

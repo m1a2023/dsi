@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g CMakeFiles/LinkedListApp.dir/src/main.cpp.o -o /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/lib/LinkedListApp  -Wl,-rpath,/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build liblinkedlist_shared.so 

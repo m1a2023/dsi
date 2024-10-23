@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g CMakeFiles/LinkedListImplementation.dir/src/source/LinkedList.cpp.o CMakeFiles/LinkedListImplementation.dir/src/main.cpp.o -o /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/LinkedListImplementation 

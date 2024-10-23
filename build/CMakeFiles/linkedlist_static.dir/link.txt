@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblinkedlist_static.a CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.o
+/usr/bin/ranlib liblinkedlist_static.a
