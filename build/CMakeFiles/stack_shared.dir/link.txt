@@ -1,1 +1,1 @@
-/usr/bin/clang++ -fPIC -g -shared -Wl,-soname,libstack_shared.so -o libstack_shared.so CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o 
+/usr/bin/clang++ -fPIC  -DLINUX -g -shared -Wl,-soname,libstack_shared.so -o /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_shared.so CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o 

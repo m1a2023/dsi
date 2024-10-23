@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libstack_static.a"
+  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_static.a"
 )

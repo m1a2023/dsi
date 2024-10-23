@@ -6,5 +6,5 @@ CXX_DEFINES = -Dlinkedlist_shared_EXPORTS
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -g -std=gnu++11 -fPIC
+CXX_FLAGS =  -DLINUX -g -std=gnu++11 -fPIC
 

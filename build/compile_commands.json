@@ -1,31 +1,31 @@
 [
 {
   "directory": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build",
-  "command": "/usr/bin/clang++   -g -std=gnu++11 -o CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
+  "command": "/usr/bin/clang++    -DLINUX -g -std=gnu++11 -o CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
   "file": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
   "output": "CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.o"
 },
 {
   "directory": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build",
-  "command": "/usr/bin/clang++   -g -std=gnu++11 -o CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
+  "command": "/usr/bin/clang++    -DLINUX -g -std=gnu++11 -o CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
   "file": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
   "output": "CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o"
 },
 {
   "directory": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build",
-  "command": "/usr/bin/clang++ -Dlinkedlist_shared_EXPORTS  -g -std=gnu++11 -fPIC -o CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
+  "command": "/usr/bin/clang++ -Dlinkedlist_shared_EXPORTS   -DLINUX -g -std=gnu++11 -fPIC -o CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
   "file": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
   "output": "CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o"
 },
 {
   "directory": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build",
-  "command": "/usr/bin/clang++ -Dstack_shared_EXPORTS  -g -std=gnu++11 -fPIC -o CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
+  "command": "/usr/bin/clang++ -Dstack_shared_EXPORTS   -DLINUX -g -std=gnu++11 -fPIC -o CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
   "file": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp",
   "output": "CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o"
 },
 {
   "directory": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build",
-  "command": "/usr/bin/clang++   -g -std=gnu++11 -o CMakeFiles/dsi_app.dir/src/main.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/main.cpp",
+  "command": "/usr/bin/clang++    -DLINUX -g -std=gnu++11 -o CMakeFiles/dsi_app.dir/src/main.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/main.cpp",
   "file": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/main.cpp",
   "output": "CMakeFiles/dsi_app.dir/src/main.cpp.o"
 }

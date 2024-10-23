@@ -14,6 +14,7 @@ public:
     bool        is_empty();
     T           peek();
     std::string to_string();
+
 private:
     LinkedList<T>* list;
 };

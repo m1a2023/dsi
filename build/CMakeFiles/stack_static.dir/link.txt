@@ -1,2 +1,2 @@
-/usr/bin/ar qc libstack_static.a CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o
-/usr/bin/ranlib libstack_static.a
+/usr/bin/ar qc /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_static.a CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o
+/usr/bin/ranlib /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_static.a

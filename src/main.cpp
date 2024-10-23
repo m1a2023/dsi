@@ -66,13 +66,12 @@ int main() {
     std::cout 
         << std::endl << "peek(): " << list.peek() << std::endl;
     }
-    std::cout << "-------------------------------";
+    
+    std::cout << "\n-------------------------------\n";
 
     Stack<std::string> stack;
     //testing
     {
-        //int ** a = new int(4);
-
     for (int i = 0; i < 21; i += 2) {
         stack.push(std::to_string(i) + "<-string");
     }

@@ -7,34 +7,43 @@ project(dsi VERSION 1.0.2)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Define source files for the LinkedList library
+# Define source files for the LinkedList and Stack library
 set(LIBRARY_SOURCES
     src/source/LinkedList.cpp
-    #src/source/Stack.cpp
     # Add other source files if needed
 )
 
-# Define header files for the LinkedList library (optional)
+# Define header files for the libraries (optional)
 set(LIBRARY_HEADERS
     src/headers/LinkedList.h
     src/headers/Stack.h
-    # Add other header files if needed
 )
 
-# Create a static library
-add_library(linkedlist_static  STATIC ${LIBRARY_SOURCES})
-add_library(stack_static       STATIC ${LIBRARY_SOURCES})
+# Set platform-specific compiler flags
+if (WIN32)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DWINDOWS")
+    set(OUTPUT_DIR "${CMAKE_SOURCE_DIR}/bin/windows")
+elseif (UNIX)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DLINUX")
+    set(OUTPUT_DIR "${CMAKE_SOURCE_DIR}/bin/linux")
+endif()
 
-# Create a shared library
-add_library(linkedlist_shared   SHARED ${LIBRARY_SOURCES})
-add_library(stack_shared        SHARED ${LIBRARY_SOURCES})
+# Create static libraries
+add_library(linkedlist_static STATIC ${LIBRARY_SOURCES})
+add_library(stack_static STATIC ${LIBRARY_SOURCES})
 
-# Set the output directories for the libraries
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin) # For static libraries (.a)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin) # For shared libraries (.so)
+# Create shared libraries
+add_library(linkedlist_shared SHARED ${LIBRARY_SOURCES})
+add_library(stack_shared SHARED ${LIBRARY_SOURCES})
+
+# Set output directories for the libraries
+set_target_properties(linkedlist_static PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
+set_target_properties(stack_static PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
+set_target_properties(linkedlist_shared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
+set_target_properties(stack_shared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 
 # Set the output directory for the executable
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/lib) # For executable
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/bin)
 
 # Create the executable
 add_executable(dsi_app src/main.cpp)

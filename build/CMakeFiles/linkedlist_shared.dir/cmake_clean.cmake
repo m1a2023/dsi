@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_shared.pdb"
+  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_shared.so"
   "CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o"
   "CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o.d"
-  "liblinkedlist_shared.pdb"
-  "liblinkedlist_shared.so"
 )
 
 # Per-language clean rules from dependency scanning.
