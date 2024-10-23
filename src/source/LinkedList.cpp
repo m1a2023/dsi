@@ -7,6 +7,7 @@ template <typename T>
 LinkedList<T>::LinkedList() {
     this->head = nullptr;
     this->tail = nullptr;
+    this->list_size = 0;
 }
 
 template <typename T>

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "./headers/LinkedList.h"
 #include "./headers/Stack.h"
+#include "headers/Queue.h"
 
 int main() {
     LinkedList<int> list;
@@ -28,13 +29,6 @@ int main() {
     LinkedList<std::string> list1;
 
 //workds correctly
-    std::cout 
-        << "find_index(5): "
-        << list.get(5) 
-        << std::endl << "index of 7: " 
-        << list.index_of(7)
-        << std::endl;
-
     std::cout 
         << std::endl 
         << "items: " << list.to_string() 
@@ -80,5 +74,20 @@ int main() {
     std::cout << std::endl << stack.peek() << std::endl; 
     }
 
+    std::cout << "\n-------------------------------\n";
+
+    Queue<std::string> queue;
+    //testing
+    {
+        for (int i = 0; i < 21; i += 2) {
+            queue.push(std::to_string(i) + "<-string");
+        }
+
+        std::cout << std::endl << queue.to_string() << std::endl;
+        std::cout << std::endl << queue.peek() << std::endl;
+    }
+    int j;
+    std::cin >> j;
     return 0;
+   
 }
