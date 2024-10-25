@@ -19,12 +19,9 @@ int main() {
 //works correctly
     std::cout 
         << std::endl 
-        << "items: " << list.to_string() 
-        << std::endl 
-        << "size: " << list.size() 
-        << std::endl 
-        << "is empty? " << list.is_empty()
-        << std::endl;
+        << "items: " << list.to_string() << std::endl 
+        << "size: " << list.size() << std::endl 
+        << "is empty? " << list.is_empty() << std::endl;
 
     LinkedList<std::string> list1;
 
