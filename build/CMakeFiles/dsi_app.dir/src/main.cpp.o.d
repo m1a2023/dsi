@@ -177,6 +177,7 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: \
   /usr/include/assert.h \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/./headers/LinkedList.h \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/./headers/Node.h \
+  /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/./headers/IDataStructure.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/sstream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/sstream.tcc \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/./headers/../source/LinkedList.cpp \
