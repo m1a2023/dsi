@@ -2,6 +2,7 @@
 #define NODE_H
 
 #include "Node.h"
+#include "IDataStructure.h"
 
 #include <sstream>
 #include <iostream>

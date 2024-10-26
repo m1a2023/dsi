@@ -1,8 +1,9 @@
 {
+	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_shared.so"
+			"path" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_static.a"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 37,
+				"line" : 34,
 				"parent" : 0
 			}
 		]
@@ -35,13 +36,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -DLINUX -g -std=gnu++11 -fPIC"
-				}
-			],
-			"defines" : 
-			[
-				{
-					"define" : "stack_shared_EXPORTS"
+					"fragment" : " -DLINUX -g -std=gnu++11"
 				}
 			],
 			"language" : "CXX",
@@ -59,20 +54,9 @@
 			]
 		}
 	],
-	"id" : "stack_shared::@6890427a1f51a3e7e1df",
-	"link" : 
-	{
-		"commandFragments" : 
-		[
-			{
-				"fragment" : "",
-				"role" : "flags"
-			}
-		],
-		"language" : "CXX"
-	},
-	"name" : "stack_shared",
-	"nameOnDisk" : "libstack_shared.so",
+	"id" : "linkedlist_static::@6890427a1f51a3e7e1df",
+	"name" : "linkedlist_static",
+	"nameOnDisk" : "liblinkedlist_static.a",
 	"paths" : 
 	{
 		"build" : ".",
@@ -109,5 +93,5 @@
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "STATIC_LIBRARY"
 }

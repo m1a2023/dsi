@@ -4,6 +4,7 @@
 CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/main.cpp \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/LinkedList.h \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp \
+  /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/IDataStructure.h \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/LinkedList.h \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Node.h \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Queue.h \
@@ -278,8 +279,6 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/c++/13/bits/move.h:
 
-/usr/include/c++/13/cassert:
-
 /usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
@@ -314,7 +313,7 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/c++/13/sstream:
 
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
+/usr/include/ctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -328,47 +327,21 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/c++/13/bits/basic_ios.h:
 
-/usr/lib/llvm-18/lib/clang/18/include/__stdarg___gnuc_va_list.h:
-
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/bits/sstream.tcc:
-
-/usr/include/c++/13/cwctype:
-
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/main.cpp:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
 /usr/include/c++/13/bits/stl_function.h:
 
 /usr/include/c++/13/bits/utility.h:
 
-/usr/include/c++/13/iosfwd:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/13/bits/predefined_ops.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
 
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Stack.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
 /usr/include/stdc-predef.h:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/include/features.h:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/c++/13/bits/stringfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -388,15 +361,59 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/c++/13/bits/std_abs.h:
 
-/usr/include/c++/13/bits/concept_check.h:
+/usr/include/c++/13/bits/locale_classes.h:
 
-/usr/include/c++/13/bits/alloc_traits.h:
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Node.h:
 
 /usr/include/c++/13/ios:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/13/backward/binders.h:
+
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/lib/llvm-18/lib/clang/18/include/__stdarg___gnuc_va_list.h:
+
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp:
+
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/IDataStructure.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/sstream.tcc:
+
+/usr/include/c++/13/cwctype:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/c++/13/iosfwd:
+
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/main.cpp:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
 /usr/include/alloca.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/c++/13/bits/concept_check.h:
 
 /usr/lib/llvm-18/lib/clang/18/include/__stddef_size_t.h:
 
@@ -430,21 +447,13 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/c++/13/string:
 
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/asm-generic/errno-base.h:
-
 /usr/include/c++/13/bits/istream.tcc:
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
 /usr/include/c++/13/bits/invoke.h:
 
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Node.h:
-
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/ctype.h:
+/usr/include/c++/13/cassert:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -473,12 +482,6 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 /usr/include/c++/13/bits/functional_hash.h:
 
 /usr/include/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/13/cctype:
 

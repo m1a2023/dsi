@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_shared.so"
+			"path" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/bin/dsi_app"
 		}
 	],
 	"backtrace" : 1,
@@ -10,7 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_library"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 36,
+				"line" : 51,
 				"parent" : 0
 			}
 		]
@@ -35,13 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -DLINUX -g -std=gnu++11 -fPIC"
-				}
-			],
-			"defines" : 
-			[
-				{
-					"define" : "linkedlist_shared_EXPORTS"
+					"fragment" : " -DLINUX -g -std=gnu++11"
 				}
 			],
 			"language" : "CXX",
@@ -59,11 +53,15 @@
 			]
 		}
 	],
-	"id" : "linkedlist_shared::@6890427a1f51a3e7e1df",
+	"id" : "dsi_app::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-DLINUX -g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -71,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "linkedlist_shared",
-	"nameOnDisk" : "liblinkedlist_shared.so",
+	"name" : "dsi_app",
+	"nameOnDisk" : "dsi_app",
 	"paths" : 
 	{
 		"build" : ".",
@@ -86,13 +84,6 @@
 			[
 				0
 			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				1
-			]
 		}
 	],
 	"sources" : 
@@ -100,14 +91,9 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/source/LinkedList.cpp",
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/headers/Queue.h",
-			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "EXECUTABLE"
 }

@@ -17,6 +17,8 @@ set(LIBRARY_SOURCES
 set(LIBRARY_HEADERS
     src/headers/LinkedList.h
     src/headers/Stack.h
+    src/headers/Queue.h
+    src/headers/IDataStructure.h
 )
 
 # Set platform-specific compiler flags

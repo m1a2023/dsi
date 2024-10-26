@@ -1,25 +1,25 @@
 #include "LinkedList.h"
 
-namespace dsi{ 
+namespace dsi { 
 template <typename T> 
-class Queue {
+class Queue : public IDataStructure<T> {
 public:
     //constructor and destructor 
     Queue();
     ~Queue();
 
     //core methods
-    T               pop();
+    T               pop()           override;
     
-    void            push(T item);
+    void            push(T item)    override;
 
-    T               peek();
+    T               peek()          override;
 
-    int             size();
-    void            clear();
-    bool            is_empty();
+    int             size()          override;
+    void            clear()         override;
+    bool            is_empty()      override;
 
-    std::string     to_string();
+    std::string     to_string()     override;
 
 private:
 	LinkedList<T>* list;
@@ -55,6 +55,11 @@ int Queue<T>::size() {
 template <typename T>
 bool Queue<T>::is_empty() {
     return this->list->is_empty();
+}
+
+template <typename T>
+void Queue<T>::clear() {
+    this->list->clear();
 }
 
 template <typename T>
