@@ -1,7 +1,7 @@
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles/linkedlist_static.dir
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles/stack_static.dir
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles/linkedlist_shared.dir
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles/stack_shared.dir
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles/dsi_app.dir
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles/edit_cache.dir
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles/rebuild_cache.dir
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles/linkedlist_static.dir
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles/stack_static.dir
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles/linkedlist_shared.dir
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles/stack_shared.dir
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles/dsi_app.dir
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles/edit_cache.dir
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles/rebuild_cache.dir

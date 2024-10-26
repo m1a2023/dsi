@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_shared.so"
+			"path" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_shared.so"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -DLINUX -g -std=gnu++11 -fPIC"
+					"fragment" : " -DLINUX -std=gnu++11 -fPIC"
 				}
 			],
 			"defines" : 
@@ -91,7 +91,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -106,6 +107,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/headers/Queue.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/headers/TimeMeasurer.h",
 			"sourceGroupIndex" : 1
 		}
 	],

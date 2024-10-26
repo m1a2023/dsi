@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_static.a"
+			"path" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_static.a"
 		}
 	],
 	"backtrace" : 1,
@@ -36,7 +36,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -DLINUX -g -std=gnu++11"
+					"fragment" : " -DLINUX -std=gnu++11"
 				}
 			],
 			"language" : "CXX",
@@ -75,7 +75,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -90,6 +91,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/headers/Queue.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/headers/TimeMeasurer.h",
 			"sourceGroupIndex" : 1
 		}
 	],

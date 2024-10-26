@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp" "CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o" "gcc" "CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o.d"
+  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp" "CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o" "gcc" "CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

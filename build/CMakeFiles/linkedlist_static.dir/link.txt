@@ -1,2 +1,2 @@
-/usr/bin/ar qc /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_static.a CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.o
-/usr/bin/ranlib /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_static.a
+/usr/bin/ar qc /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_static.a CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.o
+/usr/bin/ranlib /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_static.a

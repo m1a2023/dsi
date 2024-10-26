@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list
+CMAKE_SOURCE_DIR = /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build
+CMAKE_BINARY_DIR = /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/stack_static.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/stack_static.dir/progress.make
 include CMakeFiles/stack_static.dir/flags.make
 
 CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o: CMakeFiles/stack_static.dir/flags.make
-CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp
+CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
 CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o: CMakeFiles/stack_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o -MF CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o.d -o CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o -MF CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o.d -o CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
 
 CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp > CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp > CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.i
 
 CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp -o CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.s
 
 # Object files for target stack_static
 stack_static_OBJECTS = \
@@ -90,15 +90,15 @@ stack_static_OBJECTS = \
 # External object files for target stack_static
 stack_static_EXTERNAL_OBJECTS =
 
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_static.a: CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_static.a: CMakeFiles/stack_static.dir/build.make
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_static.a: CMakeFiles/stack_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_static.a"
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_static.a: CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_static.a: CMakeFiles/stack_static.dir/build.make
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_static.a: CMakeFiles/stack_static.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_static.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/stack_static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stack_static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/stack_static.dir/build: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_static.a
+CMakeFiles/stack_static.dir/build: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_static.a
 .PHONY : CMakeFiles/stack_static.dir/build
 
 CMakeFiles/stack_static.dir/clean:
@@ -106,6 +106,6 @@ CMakeFiles/stack_static.dir/clean:
 .PHONY : CMakeFiles/stack_static.dir/clean
 
 CMakeFiles/stack_static.dir/depend:
-	cd /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles/stack_static.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles/stack_static.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/stack_static.dir/depend
 

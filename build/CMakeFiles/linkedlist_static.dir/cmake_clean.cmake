@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_static.a"
-  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_static.pdb"
+  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_static.a"
+  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_static.pdb"
   "CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.o"
   "CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.o.d"
 )

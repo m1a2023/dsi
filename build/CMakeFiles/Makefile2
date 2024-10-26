@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list
+CMAKE_SOURCE_DIR = /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build
+CMAKE_BINARY_DIR = /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -89,14 +89,14 @@ clean: CMakeFiles/dsi_app.dir/clean
 CMakeFiles/linkedlist_static.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_static.dir/build.make CMakeFiles/linkedlist_static.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_static.dir/build.make CMakeFiles/linkedlist_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles --progress-num=5,6 "Built target linkedlist_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=5,6 "Built target linkedlist_static"
 .PHONY : CMakeFiles/linkedlist_static.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/linkedlist_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/linkedlist_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 0
 .PHONY : CMakeFiles/linkedlist_static.dir/rule
 
 # Convenience name for target.
@@ -115,14 +115,14 @@ CMakeFiles/linkedlist_static.dir/clean:
 CMakeFiles/stack_static.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_static.dir/build.make CMakeFiles/stack_static.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_static.dir/build.make CMakeFiles/stack_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles --progress-num=9,10 "Built target stack_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=9,10 "Built target stack_static"
 .PHONY : CMakeFiles/stack_static.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stack_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stack_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 0
 .PHONY : CMakeFiles/stack_static.dir/rule
 
 # Convenience name for target.
@@ -141,14 +141,14 @@ CMakeFiles/stack_static.dir/clean:
 CMakeFiles/linkedlist_shared.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles --progress-num=3,4 "Built target linkedlist_shared"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=3,4 "Built target linkedlist_shared"
 .PHONY : CMakeFiles/linkedlist_shared.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/linkedlist_shared.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/linkedlist_shared.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 0
 .PHONY : CMakeFiles/linkedlist_shared.dir/rule
 
 # Convenience name for target.
@@ -167,14 +167,14 @@ CMakeFiles/linkedlist_shared.dir/clean:
 CMakeFiles/stack_shared.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles --progress-num=7,8 "Built target stack_shared"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=7,8 "Built target stack_shared"
 .PHONY : CMakeFiles/stack_shared.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stack_shared.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stack_shared.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 0
 .PHONY : CMakeFiles/stack_shared.dir/rule
 
 # Convenience name for target.
@@ -193,14 +193,14 @@ CMakeFiles/stack_shared.dir/clean:
 CMakeFiles/dsi_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi_app.dir/build.make CMakeFiles/dsi_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi_app.dir/build.make CMakeFiles/dsi_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles --progress-num=1,2 "Built target dsi_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=1,2 "Built target dsi_app"
 .PHONY : CMakeFiles/dsi_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dsi_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dsi_app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles 0
 .PHONY : CMakeFiles/dsi_app.dir/rule
 
 # Convenience name for target.

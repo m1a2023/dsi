@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_shared.pdb"
-  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/libstack_shared.so"
+  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_shared.pdb"
+  "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_shared.so"
   "CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o"
   "CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o.d"
 )
