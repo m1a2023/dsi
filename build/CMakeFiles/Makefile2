@@ -190,7 +190,7 @@ CMakeFiles/stack_shared.dir/clean:
 # Target rules for target CMakeFiles/dsi_app.dir
 
 # All Build rule for target.
-CMakeFiles/dsi_app.dir/all: CMakeFiles/linkedlist_shared.dir/all
+CMakeFiles/dsi_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi_app.dir/build.make CMakeFiles/dsi_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi_app.dir/build.make CMakeFiles/dsi_app.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles --progress-num=1,2 "Built target dsi_app"
@@ -198,7 +198,7 @@ CMakeFiles/dsi_app.dir/all: CMakeFiles/linkedlist_shared.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dsi_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dsi_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/build/CMakeFiles 0
 .PHONY : CMakeFiles/dsi_app.dir/rule

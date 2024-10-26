@@ -46,7 +46,7 @@ set_target_properties(stack_shared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/bin)
 
 # Create the executable
-add_executable(dsi_app src/main.cpp "src/headers/Queue.h")
+add_executable(dsi_app src/main.cpp)
 
 # Link the executable with the shared library
 target_link_libraries(dsi_app)

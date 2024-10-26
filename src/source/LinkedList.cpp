@@ -3,6 +3,8 @@
 
 #include "../headers/LinkedList.h"
 
+using namespace dsi;
+
 template <typename T>
 LinkedList<T>::LinkedList() {
     this->head = nullptr;
@@ -11,7 +13,7 @@ LinkedList<T>::LinkedList() {
 }
 
 template <typename T>
-LinkedList<T>::~LinkedList() { }
+LinkedList<T>::~LinkedList() { this->clear(); }
 
 template <typename T> 
 void LinkedList<T>::add(T item) {
@@ -20,8 +22,7 @@ void LinkedList<T>::add(T item) {
     if (this->head == nullptr) {
         this->head = node;
         this->tail = node;
-    } 
-    else {
+    } else {
         this->tail->next = node;
         this->tail = node;
     }
@@ -33,27 +34,23 @@ void LinkedList<T>::add(T item) {
 template <typename T>
 void LinkedList<T>::push(T item) {
     this->add(item);
+    return;
 }
 
 template <typename T>
 T LinkedList<T>::get(int index) {
     if (this->head == nullptr || index < 0 || index > this->list_size) 
-        throw new std::out_of_range("Out of range exception.");
-    else if (this->list_size == 1) {
-        return this->head->data;
-    }
-    else {
+        throw std::out_of_range("Out of range exception.");
         Node<T>* tmp = this->head;
 
-        for (int i = 0; i < index; i++) {
-            if (tmp->next == nullptr) {
-                throw new std::out_of_range("Out of range exception.");
-            }
-            tmp = tmp->next;
+    for (int i = 0; i < index; i++) {
+        if (tmp->next == nullptr) {
+            throw std::out_of_range("Out of range exception.");
         }
-
-        return tmp->data;
+        tmp = tmp->next;
     }
+
+    return tmp->data;
 }
 
 template <typename T> 
@@ -61,7 +58,7 @@ void LinkedList<T>::insert(int index, T item) {
     Node<T>* new_last_node = new Node<T> (item); 
    
     if (index < 0 || index > this->list_size) 
-        throw new std::out_of_range("Out of range exception.");
+        throw std::out_of_range("Out of range exception.");
 
     else if (this->head == nullptr && index == 0) {
         this->head = new_last_node;
@@ -71,7 +68,7 @@ void LinkedList<T>::insert(int index, T item) {
         this->head = new_last_node;
     } else if (this->list_size == 1) {
         this->tail = new_last_node;
-        this->tail->next = new_last_node;
+        this->tail->next = nullptr;
     } else if (this->list_size == index) {
         this->tail->next = new_last_node;
         this->tail = new_last_node;
@@ -94,19 +91,19 @@ void LinkedList<T>::insert(int index, T item) {
 template <typename T>
 void LinkedList<T>::insert_first(T item) {
     this->insert(0, item);
+    return;
 }
 
 template <typename T>
 void LinkedList<T>::insert_last(T item) {
     this->add(item);
+    return;
 }
 
 template <typename T> 
 void LinkedList<T>::remove(int index) {
-    if (index < 0 || index > this->list_size - 1) 
-        throw new std::out_of_range("List out of range.");
-    else if (this->head == nullptr) 
-        throw new std::range_error("List is empty.");
+    if (this->head == nullptr || index < 0 || index > this->list_size - 1) 
+        throw std::out_of_range("List out of range.");
     
     else if (this->list_size == 1) {
         delete this->head; 
@@ -165,40 +162,23 @@ void LinkedList<T>::clear() {
 template <typename T>
 void LinkedList<T>::remove_first() {
     this->remove(0);
+    return;
 }
 
 template <typename T>
 void LinkedList<T>::remove_last() {
     this->remove(this->list_size - 1);
+    return;
 }
 
 template <typename T>
 T LinkedList<T>::pop() {
-    if (this->head == this->tail) {
-        T tmp = this->head->data;   
-        delete this->head;
-
-        this->head = nullptr;
-        this->tail = nullptr;
-
-        this->list_size--;
-        return tmp;
-    }
-
-    Node<T>* tmp_head_p = this->head;
-
-    while (tmp_head_p->next != this->tail) {
-        tmp_head_p = tmp_head_p->next;
-    }
-  
-    T tmp = this->tail->data;
-    delete this->tail;
-
-    this->tail = tmp_head_p;
-    this->tail->next = nullptr;
-
-    this->list_size--;
-    return tmp;
+    if (this->list_size == 0) 
+        throw std::out_of_range("Cannot pop from an empty list.");
+    
+    T data = this->tail->data;
+    this->remove(this->list_size - 1);
+    return data;
 }
 
 template <typename T> 
@@ -206,7 +186,7 @@ int LinkedList<T>::size() { return this->list_size; }
 
 template <typename T>
 int LinkedList<T>::index_of(T item) {
-    if (this->head == nullptr) throw new std::range_error("Impossible to get index in empty list.");
+    if (this->head == nullptr) throw std::range_error("Impossible to get index in empty list.");
     else if (this->list_size == 1) return 0;
 
     Node<T>* tmp_head_p = this->head;
@@ -222,6 +202,8 @@ int LinkedList<T>::index_of(T item) {
 
 template <typename T>
 T LinkedList<T>::peek() {
+    if (this->head == nullptr)
+        throw std::out_of_range("Out of range exception.");
     return tail->data;
 }
 
@@ -232,8 +214,8 @@ bool LinkedList<T>::is_empty() {
 
 template <typename T>
 std::string LinkedList<T>::to_string() {
-    if (this->head == nullptr) 
-        throw new std::range_error("Impossible to parse empty list to string.");
+    if (this->list_size == 0) 
+        throw std::range_error("Impossible to parse empty list to string.");
 
     Node<T>* tmp = this->head;
     std::stringstream ss;
@@ -243,7 +225,6 @@ std::string LinkedList<T>::to_string() {
         tmp = tmp->next;
     }
 
-    delete tmp;
     return ss.str();
 }
 

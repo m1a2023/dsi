@@ -1,90 +1,149 @@
 #include <iostream>
+#include <cassert>
+
 #include "./headers/LinkedList.h"
 #include "./headers/Stack.h"
-#include "headers/Queue.h"
+#include "./headers/Queue.h"
 
-int main() {
+
+void testLinkedList() {
     LinkedList<int> list;
 
-    //testing
-    {
-//works correclty
-    for (int i = 0; i < 10; i++) {
-        list.add(i);
-    }
-    
-//works correctly
-    //list.remove(0);
+    // Test: Initial state
+    assert(list.size() == 0);
+    assert(list.is_empty());
 
-//works correctly
-    std::cout 
-        << std::endl 
-        << "items: " << list.to_string() << std::endl 
-        << "size: " << list.size() << std::endl 
-        << "is empty? " << list.is_empty() << std::endl;
+    // Test: Adding elements
+    list.add(1);
+    list.add(2);
+    list.add(3);
+    assert(list.size() == 3);
+    assert(list.to_string() == "1 2 3 ");
 
-    LinkedList<std::string> list1;
+    // Test: Insert at specific positions
+    list.insert(1, 10);  // Insert 10 at index 1
+    assert(list.to_string() == "1 10 2 3 ");
+    list.insert_first(0);
+    assert(list.to_string() == "0 1 10 2 3 ");
+    list.insert_last(99);
+    assert(list.to_string() == "0 1 10 2 3 99 ");
+    assert(list.size() == 6);
 
-//workds correctly
-    std::cout 
-        << std::endl 
-        << "items: " << list.to_string() 
-        << std::endl;
+    // Test: Retrieve elements
+    assert(list.get(0) == 0);
+    assert(list.get(2) == 10);
+    assert(list.get(5) == 99);
 
-//workds correctly
-    list.insert_first(-1);
-    std::cout << "\ninsert_first(-1)\n";
-    list.insert(4, 999);
-    std::cout << "\ninsert(4, 999)\n";
-    list.insert_last(-9);
-    std::cout << "\ninsert_last(-9)\n";
-
+    // Test: Remove elements
+    list.remove(0); // Remove first element
+    assert(list.to_string() == "1 10 2 3 99 ");
     list.remove_first();
-    std::cout << "\nremove_first()\n";
+    assert(list.to_string() == "10 2 3 99 ");
     list.remove_last();
-    std::cout << "\nremove_last()\n";
+    assert(list.to_string() == "10 2 3 ");
+    assert(list.size() == 3);
 
-    std::cout 
-        << std::endl << "items: " << list.to_string() << std::endl;
+    // Test: Clear the list
+    list.clear();
+    assert(list.is_empty());
+    assert(list.size() == 0);
 
-    for (int i = 0; i < 4; i++) {
-        std::cout << "list.pop: " << list.pop() << std::endl;
+    // Test: Pop elements (add first to populate)
+    list.add(1);
+    list.add(2);
+    list.add(3);
+    assert(list.pop() == 3);
+    assert(list.to_string() == "1 2 ");
+    assert(list.size() == 2);
+
+    // Test: Peek last element
+    assert(list.peek() == 2);
+
+    // Test: Index of element
+    assert(list.index_of(1) == 0);
+    assert(list.index_of(2) == 1);
+
+    // Edge case: Operations on empty list
+    list.clear();
+    try {
+        list.pop();
+        assert(false); // Should not reach here
+    } catch (const std::out_of_range&) {
+        // Expected exception
     }
 
-    std::cout 
-        << std::endl << "items: " << list.to_string() << std::endl;
-    
-    std::cout 
-        << std::endl << "peek(): " << list.peek() << std::endl;
-    }
-    
-    std::cout << "\n-------------------------------\n";
-
-    Stack<std::string> stack;
-    //testing
-    {
-    for (int i = 0; i < 21; i += 2) {
-        stack.push(std::to_string(i) + "<-string");
+    try {
+        list.get(0);
+        assert(false); // Should not reach here
+    } catch (const std::out_of_range&) {
+        // Expected exception
     }
 
-    std::cout << std::endl << stack.to_string() << std::endl; 
-    std::cout << std::endl << stack.peek() << std::endl; 
+    try {
+        list.remove(0);
+        assert(false); // Should not reach here
+    } catch (const std::out_of_range&) {
+        // Expected exception
     }
 
-    std::cout << "\n-------------------------------\n";
-
-    Queue<std::string> queue;
-    //testing
-    {
-        for (int i = 0; i < 21; i += 2) {
-            queue.push(std::to_string(i) + "<-string");
-        }
-
-        std::cout << std::endl << queue.to_string() << std::endl;
-        std::cout << std::endl << queue.peek() << std::endl;
+    try {
+        list.to_string();
+        assert(false); // Should not reach here
+    } catch (const std::range_error&) {
+        // Expected exception
     }
-    int j;
-    std::cin >> j;
+
+    std::cout << "All LinkedList tests passed successfully!" << std::endl;
+}
+
+void testStack() {
+    Stack<int> stack;
+    // Basic push
+    for (int i = 0; i < 5; ++i) stack.push(i);
+    assert(stack.size() == 5);
+
+    // Peek and pop
+    assert(stack.peek() == 4);
+    for (int i = 4; i >= 0; --i) {
+        assert(stack.pop() == i);
+    }
+    assert(stack.is_empty());
+
+    // Edge case
+    try {
+        stack.pop();
+        assert(false); // Should not reach here
+    } catch (...) {
+        assert(true); // Expecting exception
+    }
+}
+
+void testQueue() {
+    Queue<int> queue;
+    // Basic enqueue
+    for (int i = 0; i < 5; ++i) queue.push(i);
+    assert(queue.size() == 5);
+
+    // Peek and dequeue
+    assert(queue.peek() == 0);
+    for (int i = 0; i < 5; ++i) {
+        assert(queue.pop() == i);
+    }
+    assert(queue.is_empty());
+
+    // Edge case
+    try {
+        queue.pop();
+        assert(false); // Should not reach here
+    } catch (...) {
+        assert(true); // Expecting exception
+    }
+}
+
+int main() {
+    testLinkedList();
+    testStack();
+    testQueue();
+    std::cout << "All tests passed!" << std::endl;
     return 0;
-   
 }

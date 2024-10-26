@@ -6,6 +6,7 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/LinkedList.h \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Node.h \
+  /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Queue.h \
   /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Stack.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bits/alloc_traits.h \
@@ -59,6 +60,7 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/cassert \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
@@ -102,6 +104,7 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/assert.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -201,8 +204,6 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/lib/llvm-18/lib/clang/18/include/__stddef_ptrdiff_t.h:
 
-/usr/lib/llvm-18/lib/clang/18/include/__stddef_nullptr_t.h:
-
 /usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h:
 
 /usr/lib/llvm-18/lib/clang/18/include/__stddef_max_align_t.h:
@@ -273,7 +274,11 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
 /usr/include/c++/13/bits/move.h:
+
+/usr/include/c++/13/cassert:
 
 /usr/include/c++/13/bits/stl_construct.h:
 
@@ -303,9 +308,11 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
-/usr/include/c++/13/bits/basic_string.tcc:
+/usr/include/c++/13/bits/locale_classes.tcc:
 
-/usr/include/alloca.h:
+/usr/include/c++/13/bits/allocator.h:
+
+/usr/include/c++/13/sstream:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
@@ -324,6 +331,10 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 /usr/lib/llvm-18/lib/clang/18/include/__stdarg___gnuc_va_list.h:
 
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
@@ -349,12 +360,6 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/stdc-predef.h:
 
-/usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/bits/allocator.h:
-
-/usr/include/c++/13/sstream:
-
 /usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/c++/13/bits/requires_hosted.h:
@@ -371,6 +376,10 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/LinkedList.h:
 
+/usr/lib/llvm-18/lib/clang/18/include/__stddef_nullptr_t.h:
+
+/usr/include/assert.h:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
@@ -384,6 +393,10 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 /usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/include/c++/13/ios:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/alloca.h:
 
 /usr/lib/llvm-18/lib/clang/18/include/__stddef_size_t.h:
 
@@ -409,15 +422,9 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/stdio.h:
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/functexcept.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/stl_iterator.h:
 
@@ -438,6 +445,12 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 /usr/include/c++/13/bits/locale_classes.h:
 
 /usr/include/ctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/stdio.h:
 
 /usr/include/c++/13/clocale:
 
@@ -507,9 +520,11 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/c++/13/typeinfo:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
 /usr/include/c++/13/bits/ptr_traits.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Queue.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
@@ -555,10 +570,6 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
 /usr/lib/llvm-18/lib/clang/18/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
@@ -574,5 +585,3 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-st
 /usr/include/wctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:

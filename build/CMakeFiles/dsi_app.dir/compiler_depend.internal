@@ -7,6 +7,7 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o
  /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/source/LinkedList.cpp
  /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/LinkedList.h
  /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Node.h
+ /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Queue.h
  /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/src/headers/Stack.h
  /usr/include/c++/13/backward/binders.h
  /usr/include/c++/13/bits/alloc_traits.h
@@ -60,6 +61,7 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o
  /usr/include/c++/13/bits/streambuf_iterator.h
  /usr/include/c++/13/bits/stringfwd.h
  /usr/include/c++/13/bits/utility.h
+ /usr/include/c++/13/cassert
  /usr/include/c++/13/cctype
  /usr/include/c++/13/cerrno
  /usr/include/c++/13/clocale
@@ -103,6 +105,7 @@ CMakeFiles/dsi_app.dir/src/main.cpp.o
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
+ /usr/include/assert.h
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h

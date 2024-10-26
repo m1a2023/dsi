@@ -1,1 +1,1 @@
-/usr/bin/clang++  -DLINUX -g CMakeFiles/dsi_app.dir/src/main.cpp.o -o /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/bin/dsi_app  -Wl,-rpath,/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/lib/liblinkedlist_shared.so 
+/usr/bin/clang++  -DLINUX -g CMakeFiles/dsi_app.dir/src/main.cpp.o -o /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/linked_list/bin/linux/bin/dsi_app 

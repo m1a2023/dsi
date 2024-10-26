@@ -1,19 +1,25 @@
 #include "LinkedList.h"
 
+namespace dsi {
 template <typename T>
 class Stack {
 public:
-    /// constructor and destructor 
+    //constructor and destructor 
     Stack();
     ~Stack();
 
-    ///  core methods
-    T           pop();
-    void        push(T item);
-    void        clear();
-    bool        is_empty();
-    T           peek();
-    std::string to_string();
+    //core methods
+    T               pop();
+
+    void            push(T item);
+
+    T               peek();
+
+    int             size();
+    void            clear();
+    bool            is_empty();
+
+    std::string     to_string();
 
 private:
     LinkedList<T>* list;
@@ -23,7 +29,10 @@ template <typename T>
 Stack<T>::Stack() { this->list = new LinkedList<T>(); }
 
 template <typename T>
-Stack<T>::~Stack() { }
+Stack<T>::~Stack() {
+    this->list->clear();
+    delete this->list;
+}
 
 template <typename T>
 T Stack<T>::pop() {
@@ -36,6 +45,11 @@ T Stack<T>::pop() {
 template <typename T>
 void Stack<T>::push(T item) {
     this->list->push(item);
+}
+
+template <typename T>
+int Stack<T>::size() {
+    return this->list->size();
 }
 
 template <typename T>
@@ -56,4 +70,5 @@ T Stack<T>::peek() {
 template <typename T>
 std::string Stack<T>::to_string() {
     return this->list->to_string();
+}
 }
