@@ -100,8 +100,24 @@ void LinkedList<T>::insert_last(T item) {
     return;
 }
 
-template <typename T> 
-void LinkedList<T>::remove(int index) {
+template <typename T>
+LinkedList<T> LinkedList<T>::copy() const
+{
+    LinkedList<T> list;
+    LinkedList<T> tmp_list;
+    Node<T>* tmp_head_p = this->head;
+
+    while (tmp_head_p != nullptr) {
+        list.add(tmp_head_p->data);
+        tmp_head_p = tmp_head_p->next;
+    }
+
+    return list;
+}
+
+template <typename T>
+void LinkedList<T>::remove(int index)
+{
     if (this->head == nullptr || index < 0 || index > this->list_size - 1) 
         throw std::out_of_range("List out of range.");
     
@@ -147,10 +163,12 @@ void LinkedList<T>::remove(int index) {
 
 template <typename T>
 void LinkedList<T>::clear() {
+    if (this->head == nullptr) return;
+
     while (this->head != nullptr) {
-        Node<T>* obsolete_node = this->head;
+        Node<T>* tmp_head_p = this->head;
         this->head = this->head->next;
-        delete obsolete_node;
+        delete tmp_head_p;
     }
     
     this->tail = nullptr;
@@ -208,8 +226,13 @@ T LinkedList<T>::peek() {
 }
 
 template <typename T>
-bool LinkedList<T>::is_empty() { 
-    return this->head == nullptr ? true : false; 
+Node<T>* LinkedList<T>::get_head() {
+    return this->head; 
+}
+
+template <typename T>
+bool LinkedList<T>::is_empty() {
+    return this->head == nullptr ? true : false;
 }
 
 template <typename T>

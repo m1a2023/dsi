@@ -18,6 +18,7 @@ public:
     int             size()          override;
     void            clear()         override;
     bool            is_empty()      override;
+    Queue<T>        copy()          const;
 
     std::string     to_string()     override;
 
@@ -70,5 +71,23 @@ T Queue<T>::peek() {
 template <typename T>
 std::string Queue<T>::to_string() {
     return this->list->to_string();
+}
+
+template <typename T>
+Queue<T> Queue<T>::copy() const {
+    Queue<T> queue;
+    LinkedList<T> tmp_list;
+    Node<T>* tmp_head_p = this->list->get_head();
+
+    while (tmp_head_p != nullptr) {
+        tmp_list.add(tmp_head_p->data);
+        tmp_head_p = tmp_head_p->next;
+    }
+
+    while (!tmp_list.is_empty()) {
+        queue.push(tmp_list.pop());
+    }
+
+    return queue;
 }
 }

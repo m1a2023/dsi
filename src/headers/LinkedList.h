@@ -19,11 +19,12 @@ public:
     ~LinkedList();
 
     //core methods
-    void        add(T item);
-    void        push(T item);       
-    void        insert(int index, T item);
-    void        insert_first(T item);
-    void        insert_last(T item);
+    void            add(T item);
+    void            push(T item);       
+    void            insert(int index, T item);
+    void            insert_first(T item);
+    void            insert_last(T item);
+    LinkedList<T>    copy() const;
 
     void        remove(int index);
     void        remove_first();     
@@ -36,6 +37,7 @@ public:
     int         index_of(T item);
     T           peek();
     T           peek_first();
+    Node<T>*    get_head();     
 
     int         size();
     bool        is_empty();

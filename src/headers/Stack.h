@@ -18,6 +18,7 @@ public:
     int             size()          override;
     void            clear()         override;
     bool            is_empty()      override;
+    Stack<T>        copy()          const;
 
     std::string     to_string()     override;
 
@@ -70,5 +71,19 @@ T Stack<T>::peek() {
 template <typename T>
 std::string Stack<T>::to_string() {
     return this->list->to_string();
+}
+
+template <typename T>
+Stack<T> Stack<T>::copy() const {
+    Stack<T> stack;
+    LinkedList<T> tmp_list;
+    Node<T>* tmp_head_p = this->list->get_head();
+
+    while (tmp_head_p != nullptr) {
+        stack.push(tmp_head_p->data);
+        tmp_head_p = tmp_head_p->next;
+    }
+
+    return stack;
 }
 }

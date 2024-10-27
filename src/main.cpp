@@ -144,6 +144,5 @@ int main() {
     testLinkedList();
     testStack();
     testQueue();
-    std::cout << "All tests passed!" << std::endl;
     return 0;
 }
