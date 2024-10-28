@@ -1,14 +1,18 @@
 {
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
 	"artifacts" : 
 	[
 		{
-			"path" : "stack_shared.dll"
-		},
-		{
-			"path" : "stack_shared.lib"
-		},
-		{
-			"path" : "stack_shared.pdb"
+			"path" : "D:/C++ projects/dsi/bin/windows/lib/stack_static.lib"
 		}
 	],
 	"backtrace" : 1,
@@ -30,7 +34,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 37,
+				"line" : 35,
 				"parent" : 0
 			}
 		]
@@ -42,12 +46,6 @@
 			[
 				{
 					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc -DWINDOWS /MDd /Zi /Ob0 /Od /RTC1"
-				}
-			],
-			"defines" : 
-			[
-				{
-					"define" : "stack_shared_EXPORTS"
 				}
 			],
 			"language" : "CXX",
@@ -65,24 +63,9 @@
 			]
 		}
 	],
-	"id" : "stack_shared::@6890427a1f51a3e7e1df",
-	"link" : 
-	{
-		"commandFragments" : 
-		[
-			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL",
-				"role" : "flags"
-			},
-			{
-				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
-				"role" : "libraries"
-			}
-		],
-		"language" : "CXX"
-	},
-	"name" : "stack_shared",
-	"nameOnDisk" : "stack_shared.dll",
+	"id" : "stack_static::@6890427a1f51a3e7e1df",
+	"name" : "stack_static",
+	"nameOnDisk" : "stack_static.lib",
 	"paths" : 
 	{
 		"build" : ".",
@@ -102,7 +85,8 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -123,7 +107,12 @@
 			"backtrace" : 1,
 			"path" : "src/headers/TimeMeasurer.h",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/headers/FileReader.h",
+			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "STATIC_LIBRARY"
 }

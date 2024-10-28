@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "linkedlist_shared.dll"
+			"path" : "stack_shared.dll"
 		},
 		{
-			"path" : "linkedlist_shared.lib"
+			"path" : "stack_shared.lib"
 		},
 		{
-			"path" : "linkedlist_shared.pdb"
+			"path" : "stack_shared.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,7 +30,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 36,
+				"line" : 39,
 				"parent" : 0
 			}
 		]
@@ -47,7 +47,7 @@
 			"defines" : 
 			[
 				{
-					"define" : "linkedlist_shared_EXPORTS"
+					"define" : "stack_shared_EXPORTS"
 				}
 			],
 			"language" : "CXX",
@@ -65,7 +65,7 @@
 			]
 		}
 	],
-	"id" : "linkedlist_shared::@6890427a1f51a3e7e1df",
+	"id" : "stack_shared::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -81,8 +81,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "linkedlist_shared",
-	"nameOnDisk" : "linkedlist_shared.dll",
+	"name" : "stack_shared",
+	"nameOnDisk" : "stack_shared.dll",
 	"paths" : 
 	{
 		"build" : ".",
@@ -102,7 +102,8 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -122,6 +123,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/headers/TimeMeasurer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/headers/FileReader.h",
 			"sourceGroupIndex" : 1
 		}
 	],

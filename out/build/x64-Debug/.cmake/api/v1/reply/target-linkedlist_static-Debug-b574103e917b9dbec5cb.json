@@ -34,7 +34,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 32,
+				"line" : 34,
 				"parent" : 0
 			}
 		]
@@ -85,7 +85,8 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -105,6 +106,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/headers/TimeMeasurer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/headers/FileReader.h",
 			"sourceGroupIndex" : 1
 		}
 	],

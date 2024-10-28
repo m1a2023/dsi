@@ -31,12 +31,12 @@ elseif (UNIX)
 endif()
 
 # Create static libraries
-add_library(linkedlist_static STATIC ${LIBRARY_SOURCES} "src/headers/Queue.h" "src/headers/TimeMeasurer.h")
-add_library(stack_static STATIC ${LIBRARY_SOURCES} "src/headers/Queue.h" "src/headers/TimeMeasurer.h")
+add_library(linkedlist_static STATIC ${LIBRARY_SOURCES} "src/headers/Queue.h" "src/headers/TimeMeasurer.h" "src/headers/FileReader.h")
+add_library(stack_static STATIC ${LIBRARY_SOURCES} "src/headers/Queue.h" "src/headers/TimeMeasurer.h" "src/headers/FileReader.h")
 
 # Create shared libraries
-add_library(linkedlist_shared SHARED ${LIBRARY_SOURCES} "src/headers/Queue.h" "src/headers/TimeMeasurer.h")
-add_library(stack_shared SHARED ${LIBRARY_SOURCES} "src/headers/Queue.h" "src/headers/TimeMeasurer.h")
+add_library(linkedlist_shared SHARED ${LIBRARY_SOURCES} "src/headers/Queue.h" "src/headers/TimeMeasurer.h" "src/headers/FileReader.h")
+add_library(stack_shared SHARED ${LIBRARY_SOURCES} "src/headers/Queue.h" "src/headers/TimeMeasurer.h" "src/headers/FileReader.h")
 
 # Set output directories for the libraries
 set_target_properties(linkedlist_static PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
@@ -48,7 +48,7 @@ set_target_properties(stack_shared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/bin)
 
 # Create the executable
-add_executable(dsi_app src/main.cpp "src/headers/TimeMeasurer.h")
+add_executable(dsi_app src/main.cpp "src/headers/TimeMeasurer.h" "src/headers/FileReader.h")
 
 # Link the executable with the shared library
 target_link_libraries(dsi_app)

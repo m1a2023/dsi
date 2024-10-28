@@ -4,6 +4,7 @@
 #include "./headers/LinkedList.h"
 #include "./headers/Stack.h"
 #include "./headers/Queue.h"
+#include "headers/FileReader.h"
 
 
 void testLinkedList() {
@@ -140,9 +141,17 @@ void testQueue() {
     }
 }
 
+void testFileReader() {
+    Queue<std::string> queue;
+    Stack<std::string> stack;
+    FileReader<std::string> reader("D:/C++ projects/dsi/src/headers/input.txt");
+    reader.process_file(&queue);
+    reader.process_file(&stack);
+}
 int main() {
     testLinkedList();
     testStack();
     testQueue();
+    testFileReader();
     return 0;
 }
