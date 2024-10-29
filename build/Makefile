@@ -143,6 +143,45 @@ stack_static/fast:
 .PHONY : stack_static/fast
 
 #=============================================================================
+# Target rules for targets named queue_static
+
+# Build rule for target.
+queue_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 queue_static
+.PHONY : queue_static
+
+# fast build rule for target.
+queue_static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/build
+.PHONY : queue_static/fast
+
+#=============================================================================
+# Target rules for targets named time_measurer_static
+
+# Build rule for target.
+time_measurer_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 time_measurer_static
+.PHONY : time_measurer_static
+
+# fast build rule for target.
+time_measurer_static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/build
+.PHONY : time_measurer_static/fast
+
+#=============================================================================
+# Target rules for targets named file_reader_static
+
+# Build rule for target.
+file_reader_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file_reader_static
+.PHONY : file_reader_static
+
+# fast build rule for target.
+file_reader_static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/build
+.PHONY : file_reader_static/fast
+
+#=============================================================================
 # Target rules for targets named linkedlist_shared
 
 # Build rule for target.
@@ -169,24 +208,63 @@ stack_shared/fast:
 .PHONY : stack_shared/fast
 
 #=============================================================================
-# Target rules for targets named dsi_app
+# Target rules for targets named queue_shared
 
 # Build rule for target.
-dsi_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dsi_app
-.PHONY : dsi_app
+queue_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 queue_shared
+.PHONY : queue_shared
 
 # fast build rule for target.
-dsi_app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi_app.dir/build.make CMakeFiles/dsi_app.dir/build
-.PHONY : dsi_app/fast
+queue_shared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/build
+.PHONY : queue_shared/fast
+
+#=============================================================================
+# Target rules for targets named time_measurer_shared
+
+# Build rule for target.
+time_measurer_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 time_measurer_shared
+.PHONY : time_measurer_shared
+
+# fast build rule for target.
+time_measurer_shared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/build
+.PHONY : time_measurer_shared/fast
+
+#=============================================================================
+# Target rules for targets named file_reader_shared
+
+# Build rule for target.
+file_reader_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file_reader_shared
+.PHONY : file_reader_shared
+
+# fast build rule for target.
+file_reader_shared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/build
+.PHONY : file_reader_shared/fast
+
+#=============================================================================
+# Target rules for targets named dsi
+
+# Build rule for target.
+dsi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dsi
+.PHONY : dsi
+
+# fast build rule for target.
+dsi/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi.dir/build.make CMakeFiles/dsi.dir/build
+.PHONY : dsi/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi_app.dir/build.make CMakeFiles/dsi_app.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi.dir/build.make CMakeFiles/dsi.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -194,7 +272,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi_app.dir/build.make CMakeFiles/dsi_app.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi.dir/build.make CMakeFiles/dsi.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -202,7 +280,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi_app.dir/build.make CMakeFiles/dsi_app.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi.dir/build.make CMakeFiles/dsi.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/source/LinkedList.o: src/source/LinkedList.cpp.o
@@ -212,8 +290,14 @@ src/source/LinkedList.o: src/source/LinkedList.cpp.o
 src/source/LinkedList.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_static.dir/build.make CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_static.dir/build.make CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/src/source/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/src/source/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.o
 .PHONY : src/source/LinkedList.cpp.o
 
 src/source/LinkedList.i: src/source/LinkedList.cpp.i
@@ -223,8 +307,14 @@ src/source/LinkedList.i: src/source/LinkedList.cpp.i
 src/source/LinkedList.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_static.dir/build.make CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_static.dir/build.make CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/src/source/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/src/source/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.i
 .PHONY : src/source/LinkedList.cpp.i
 
 src/source/LinkedList.s: src/source/LinkedList.cpp.s
@@ -234,8 +324,14 @@ src/source/LinkedList.s: src/source/LinkedList.cpp.s
 src/source/LinkedList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_static.dir/build.make CMakeFiles/linkedlist_static.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_static.dir/build.make CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/src/source/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/src/source/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.s
 .PHONY : src/source/LinkedList.cpp.s
 
 # Help Target
@@ -246,11 +342,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... dsi_app"
+	@echo "... dsi"
+	@echo "... file_reader_shared"
+	@echo "... file_reader_static"
 	@echo "... linkedlist_shared"
 	@echo "... linkedlist_static"
+	@echo "... queue_shared"
+	@echo "... queue_static"
 	@echo "... stack_shared"
 	@echo "... stack_static"
+	@echo "... time_measurer_shared"
+	@echo "... time_measurer_static"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

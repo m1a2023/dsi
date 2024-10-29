@@ -73,15 +73,15 @@ CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o: CMakeFiles/stack_shared
 CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
 CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o: CMakeFiles/stack_shared.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o -MF CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o.d -o CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o -MF CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o.d -o CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
 
 CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp > CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp > CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.i
 
 CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.s
 
 # Object files for target stack_shared
 stack_shared_OBJECTS = \

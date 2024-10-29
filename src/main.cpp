@@ -4,8 +4,7 @@
 #include "./headers/LinkedList.h"
 #include "./headers/Stack.h"
 #include "./headers/Queue.h"
-#include "headers/FileReader.h"
-
+#include "./headers/FileReader.h"
 
 void testLinkedList() {
     LinkedList<int> list;
@@ -144,10 +143,11 @@ void testQueue() {
 void testFileReader() {
     Queue<std::string> queue;
     Stack<std::string> stack;
-    FileReader<std::string> reader("D:/C++ projects/dsi/src/headers/input.txt");
+    FileReader<std::string> reader("/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/input.txt");
     reader.process_file(&queue);
     reader.process_file(&stack);
 }
+
 int main() {
     testLinkedList();
     testStack();

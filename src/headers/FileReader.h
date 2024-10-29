@@ -7,25 +7,39 @@
 namespace dsi {
     template <typename T> class FileReader{
     public:
-        // Конструктор и деструктор
         FileReader(const std::string& filename);
         ~FileReader();
 
-        // Основные методы
         void process_file(IDataStructure<T>* structure);
 
+        /**
+         * TODO add method that will get absolute path to this directory 
+         * and put it in filename to get correct path
+         * 
+         * OR
+         * 
+         * TODO use another way getting the path 
+         */
     private:
         LinkedList<T>* list;
+
+        /**
+         * ! use only RELATIVE PATH
+         */
         std::string filename;
+
+        /**
+         * use logger for output and report
+         */
+
+        // TODO Logger
     };
 
-    // Конструктор
     template <typename T>
     FileReader<T>::FileReader(const std::string& filename) : filename(filename) {
         this->list = new LinkedList<T>();
     }
 
-    // Деструктор
     template <typename T>
     FileReader<T>::~FileReader() {
         this->list->clear();
@@ -46,16 +60,13 @@ namespace dsi {
             std::istringstream iss(line);
             std::string command;
 
-            // Разбираем команду из строки
             while (iss >> command) {
                 if (command[0] == '1') {
-                    // Операция Push
-                    std::string value = command.substr(2);  // Значение после запятой
+                    std::string value = command.substr(2);  
                     structure->push(value);
                     std::cout << "Pushed: " << value << std::endl;
                 }
                 else if (command == "2") {
-                    // Операция Pop
                     try {
                         T popped = structure->pop();
                         std::cout << "Popped: " << popped << std::endl;
@@ -65,7 +76,6 @@ namespace dsi {
                     }
                 }
                 else if (command == "3") {
-                    // Операция Top (или Peek)
                     try {
                         T top = structure->peek();
                         std::cout << "Top: " << top << std::endl;
@@ -75,12 +85,10 @@ namespace dsi {
                     }
                 }
                 else if (command == "4") {
-                    // Операция isEmpty
                     bool empty = structure->is_empty();
                     std::cout << "IsEmpty: " << (empty ? "Yes" : "No") << std::endl;
                 }
                 else if (command == "5") {
-                    // Операция Print
                     std::cout << "Structure: " << structure->to_string() << std::endl;
                 }
             }

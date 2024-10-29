@@ -1,1 +1,0 @@
-/usr/bin/c++  -DLINUX CMakeFiles/dsi_app.dir/src/main.cpp.o -o /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/bin/dsi_app 

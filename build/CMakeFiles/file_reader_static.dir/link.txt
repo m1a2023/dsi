@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libfile_reader_static.a CMakeFiles/file_reader_static.dir/src/source/LinkedList.cpp.o
+/usr/bin/ranlib /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libfile_reader_static.a
