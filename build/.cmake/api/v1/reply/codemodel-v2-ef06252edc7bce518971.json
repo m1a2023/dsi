@@ -1,0 +1,150 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dsi",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dsi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsi-Debug-11810a64e5f3294d1946.json",
+					"name" : "dsi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "file_reader_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-file_reader_shared-Debug-d1373980dc28063eed6f.json",
+					"name" : "file_reader_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "file_reader_static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-file_reader_static-Debug-3fe63f6c6c28ba42d007.json",
+					"name" : "file_reader_static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkedlist_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkedlist_shared-Debug-546c610e00b1187c15ce.json",
+					"name" : "linkedlist_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkedlist_static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkedlist_static-Debug-d3b4fb4f6e1c856b961a.json",
+					"name" : "linkedlist_static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "queue_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-queue_shared-Debug-bd0ce45c71e54d39312f.json",
+					"name" : "queue_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "queue_static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-queue_static-Debug-443f1692574981b015bc.json",
+					"name" : "queue_static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stack_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stack_shared-Debug-2bb338d7656977eb67f2.json",
+					"name" : "stack_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stack_static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stack_static-Debug-8c983f2611102e612d7d.json",
+					"name" : "stack_static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "time_measurer_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-time_measurer_shared-Debug-094614450ac3a2d1016d.json",
+					"name" : "time_measurer_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "time_measurer_static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-time_measurer_static-Debug-d7c8e3d6e126a65a7e15.json",
+					"name" : "time_measurer_static",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build",
+		"source" : "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

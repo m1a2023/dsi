@@ -23,6 +23,8 @@ set(LIBRARY_HEADERS
     src/headers/Node.h
 )
 
+find_package(spdlog REQUIRED)
+
 # Set platform-specific compiler flags
 if (WIN32)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DWINDOWS")
@@ -73,4 +75,5 @@ target_link_libraries(
     queue_shared 
     time_measurer_shared
     file_reader_shared
+    spdlog::spdlog
 )

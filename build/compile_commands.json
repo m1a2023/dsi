@@ -61,7 +61,7 @@
 },
 {
   "directory": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build",
-  "command": "/usr/bin/clang++    -DLINUX -g -std=gnu++11 -o CMakeFiles/dsi.dir/src/main.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/main.cpp",
+  "command": "/usr/bin/clang++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_SHARED_LIB   -DLINUX -g -std=gnu++11 -o CMakeFiles/dsi.dir/src/main.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/main.cpp",
   "file": "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/main.cpp",
   "output": "CMakeFiles/dsi.dir/src/main.cpp.o"
 }
