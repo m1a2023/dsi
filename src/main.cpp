@@ -178,10 +178,10 @@ void test_postfix_notation_reader() {
 }
 
 int main() {
-    //testLinkedList();
-    //testStack();
-    //testQueue();
-    //testFileReader();
+    testLinkedList();
+    testStack();
+    testQueue();
+    testFileReader();
     test_postfix_notation_reader();
     return 0;
 }

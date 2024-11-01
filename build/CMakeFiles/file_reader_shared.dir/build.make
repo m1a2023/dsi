@@ -83,30 +83,30 @@ CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.s
 
-CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/file_reader_shared.dir/flags.make
-CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
-CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/file_reader_shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o -MF CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o.d -o CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
+CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o: CMakeFiles/file_reader_shared.dir/flags.make
+CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp
+CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o: CMakeFiles/file_reader_shared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o -MF CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o.d -o CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp
 
-CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp > CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.i
+CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp > CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.i
 
-CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp -o CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.s
+CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp -o CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.s
 
 # Object files for target file_reader_shared
 file_reader_shared_OBJECTS = \
 "CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.o" \
-"CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o"
+"CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o"
 
 # External object files for target file_reader_shared
 file_reader_shared_EXTERNAL_OBJECTS =
 
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libfile_reader_shared.so: CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.o
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libfile_reader_shared.so: CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libfile_reader_shared.so: CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libfile_reader_shared.so: CMakeFiles/file_reader_shared.dir/build.make
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libfile_reader_shared.so: CMakeFiles/file_reader_shared.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libfile_reader_shared.so"

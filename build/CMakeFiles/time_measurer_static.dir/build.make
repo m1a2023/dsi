@@ -83,30 +83,30 @@ CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.s
 
-CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/time_measurer_static.dir/flags.make
-CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
-CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/time_measurer_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o -MF CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o.d -o CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
+CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.o: CMakeFiles/time_measurer_static.dir/flags.make
+CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp
+CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.o: CMakeFiles/time_measurer_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.o -MF CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.o.d -o CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp
 
-CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp > CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.i
+CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp > CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.i
 
-CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp -o CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.s
+CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp -o CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.s
 
 # Object files for target time_measurer_static
 time_measurer_static_OBJECTS = \
 "CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.o" \
-"CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o"
+"CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.o"
 
 # External object files for target time_measurer_static
 time_measurer_static_EXTERNAL_OBJECTS =
 
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libtime_measurer_static.a: CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.o
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libtime_measurer_static.a: CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libtime_measurer_static.a: CMakeFiles/time_measurer_static.dir/src/source/PostfixNotationReader.cpp.o
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libtime_measurer_static.a: CMakeFiles/time_measurer_static.dir/build.make
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libtime_measurer_static.a: CMakeFiles/time_measurer_static.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libtime_measurer_static.a"

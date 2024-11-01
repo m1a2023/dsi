@@ -83,30 +83,30 @@ CMakeFiles/postfix_notation_reader_static.dir/src/source/LinkedList.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/postfix_notation_reader_static.dir/src/source/LinkedList.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/postfix_notation_reader_static.dir/src/source/LinkedList.cpp.s
 
-CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/postfix_notation_reader_static.dir/flags.make
-CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
-CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/postfix_notation_reader_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o -MF CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o.d -o CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
+CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.o: CMakeFiles/postfix_notation_reader_static.dir/flags.make
+CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp
+CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.o: CMakeFiles/postfix_notation_reader_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.o -MF CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.o.d -o CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp
 
-CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp > CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.i
+CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp > CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.i
 
-CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp -o CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.s
+CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/PostfixNotationReader.cpp -o CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.s
 
 # Object files for target postfix_notation_reader_static
 postfix_notation_reader_static_OBJECTS = \
 "CMakeFiles/postfix_notation_reader_static.dir/src/source/LinkedList.cpp.o" \
-"CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o"
+"CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.o"
 
 # External object files for target postfix_notation_reader_static
 postfix_notation_reader_static_EXTERNAL_OBJECTS =
 
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libpostfix_notation_reader_static.a: CMakeFiles/postfix_notation_reader_static.dir/src/source/LinkedList.cpp.o
-/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libpostfix_notation_reader_static.a: CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libpostfix_notation_reader_static.a: CMakeFiles/postfix_notation_reader_static.dir/src/source/PostfixNotationReader.cpp.o
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libpostfix_notation_reader_static.a: CMakeFiles/postfix_notation_reader_static.dir/build.make
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libpostfix_notation_reader_static.a: CMakeFiles/postfix_notation_reader_static.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libpostfix_notation_reader_static.a"

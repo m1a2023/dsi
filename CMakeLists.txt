@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Define source files for the LinkedList and Stack library
 set(LIBRARY_SOURCES
     src/source/LinkedList.cpp
-    src/headers/PostfixNotationReader.cpp
+    src/source/PostfixNotationReader.cpp
     # Add other source files if needed
 )
 

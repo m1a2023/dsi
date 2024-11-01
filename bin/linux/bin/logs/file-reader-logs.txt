@@ -1,18 +1,18 @@
-[2024-10-31 18:35:48.875] [file_reader_logger] [info] New FileReader was created
-[2024-10-31 18:35:48.875] [file_reader_logger] [error] Error while peeking the value: stack is empty
-[2024-10-31 18:35:48.875] [file_reader_logger] [info] command: is_empty?, value: Yes
-[2024-10-31 18:35:48.875] [file_reader_logger] [info] command: push, value: 56
-[2024-10-31 18:35:48.875] [file_reader_logger] [info] command: push, value: 7
-[2024-10-31 18:35:48.875] [file_reader_logger] [info] command: push, value: cat
-[2024-10-31 18:35:48.875] [file_reader_logger] [info] command: pop, value: 56
-[2024-10-31 18:35:48.875] [file_reader_logger] [info] command: to_string, value: cat 7 
-[2024-10-31 18:35:48.875] [file_reader_logger] [info] command: is_empty?, value: No
-[2024-10-31 18:35:48.876] [file_reader_logger] [error] Error while peeking the value: stack is empty
-[2024-10-31 18:35:48.876] [file_reader_logger] [info] command: is_empty?, value: Yes
-[2024-10-31 18:35:48.876] [file_reader_logger] [info] command: push, value: 56
-[2024-10-31 18:35:48.876] [file_reader_logger] [info] command: push, value: 7
-[2024-10-31 18:35:48.876] [file_reader_logger] [info] command: push, value: cat
-[2024-10-31 18:35:48.876] [file_reader_logger] [info] command: pop, value: cat
-[2024-10-31 18:35:48.876] [file_reader_logger] [info] command: to_string, value: 56 7 
-[2024-10-31 18:35:48.876] [file_reader_logger] [info] command: is_empty?, value: No
-[2024-10-31 18:35:48.876] [file_reader_logger] [info] FileReader was deallocated
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] New FileReader was created
+[2024-11-02 03:14:42.535] [file_reader_logger] [error] Error while peeking the value: stack is empty
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: is_empty?, value: Yes
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: push, value: 56
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: push, value: 7
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: push, value: cat
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: pop, value: 56
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: to_string, value: cat 7 
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: is_empty?, value: No
+[2024-11-02 03:14:42.535] [file_reader_logger] [error] Error while peeking the value: stack is empty
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: is_empty?, value: Yes
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: push, value: 56
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: push, value: 7
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: push, value: cat
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: pop, value: cat
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: to_string, value: 56 7 
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] command: is_empty?, value: No
+[2024-11-02 03:14:42.535] [file_reader_logger] [info] FileReader was deallocated

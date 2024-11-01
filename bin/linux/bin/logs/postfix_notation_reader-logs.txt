@@ -1,0 +1,10 @@
+[2024-11-02 03:14:42.535] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-02 03:14:42.535] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-02 03:14:42.535] [postfix_logger] [info] splitting string...
+[2024-11-02 03:14:42.536] [postfix_logger] [info] added 3 to verctor
+[2024-11-02 03:14:42.536] [postfix_logger] [info] added 4 to verctor
+[2024-11-02 03:14:42.536] [postfix_logger] [info] added + to verctor
+[2024-11-02 03:14:42.536] [postfix_logger] [info] added 5 to verctor
+[2024-11-02 03:14:42.536] [postfix_logger] [info] added * to verctor
+[2024-11-02 03:14:42.536] [postfix_logger] [info] added 6 to verctor
+[2024-11-02 03:14:42.536] [postfix_logger] [info] added - to verctor
