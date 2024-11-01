@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -DLINUX -shared -Wl,-soname,libfile_reader_shared.so -o /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libfile_reader_shared.so CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.o CMakeFiles/file_reader_shared.dir/src/source/PostfixNotationReader.cpp.o 

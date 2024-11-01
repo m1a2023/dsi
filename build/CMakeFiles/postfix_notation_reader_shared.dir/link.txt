@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -DLINUX -shared -Wl,-soname,libpostfix_notation_reader_shared.so -o libpostfix_notation_reader_shared.so CMakeFiles/postfix_notation_reader_shared.dir/src/source/LinkedList.cpp.o CMakeFiles/postfix_notation_reader_shared.dir/src/source/PostfixNotationReader.cpp.o 

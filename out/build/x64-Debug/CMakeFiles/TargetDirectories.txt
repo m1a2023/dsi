@@ -1,7 +1,0 @@
-D:/C++ projects/dsi/out/build/x64-Debug/CMakeFiles/linkedlist_static.dir
-D:/C++ projects/dsi/out/build/x64-Debug/CMakeFiles/stack_static.dir
-D:/C++ projects/dsi/out/build/x64-Debug/CMakeFiles/linkedlist_shared.dir
-D:/C++ projects/dsi/out/build/x64-Debug/CMakeFiles/stack_shared.dir
-D:/C++ projects/dsi/out/build/x64-Debug/CMakeFiles/dsi_app.dir
-D:/C++ projects/dsi/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-D:/C++ projects/dsi/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

@@ -1,2 +1,0 @@
-/usr/bin/ar qc /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_static.a CMakeFiles/stack_static.dir/src/source/LinkedList.cpp.o CMakeFiles/stack_static.dir/src/source/PostfixNotationReader.cpp.o
-/usr/bin/ranlib /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libstack_static.a

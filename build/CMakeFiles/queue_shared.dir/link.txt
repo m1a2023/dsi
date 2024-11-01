@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -DLINUX -shared -Wl,-soname,libqueue_shared.so -o /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libqueue_shared.so CMakeFiles/queue_shared.dir/src/source/LinkedList.cpp.o CMakeFiles/queue_shared.dir/src/source/PostfixNotationReader.cpp.o 
