@@ -182,6 +182,19 @@ file_reader_static/fast:
 .PHONY : file_reader_static/fast
 
 #=============================================================================
+# Target rules for targets named postfix_notation_reader_static
+
+# Build rule for target.
+postfix_notation_reader_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 postfix_notation_reader_static
+.PHONY : postfix_notation_reader_static
+
+# fast build rule for target.
+postfix_notation_reader_static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_static.dir/build.make CMakeFiles/postfix_notation_reader_static.dir/build
+.PHONY : postfix_notation_reader_static/fast
+
+#=============================================================================
 # Target rules for targets named linkedlist_shared
 
 # Build rule for target.
@@ -247,6 +260,19 @@ file_reader_shared/fast:
 .PHONY : file_reader_shared/fast
 
 #=============================================================================
+# Target rules for targets named postfix_notation_reader_shared
+
+# Build rule for target.
+postfix_notation_reader_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 postfix_notation_reader_shared
+.PHONY : postfix_notation_reader_shared
+
+# fast build rule for target.
+postfix_notation_reader_shared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_shared.dir/build.make CMakeFiles/postfix_notation_reader_shared.dir/build
+.PHONY : postfix_notation_reader_shared/fast
+
+#=============================================================================
 # Target rules for targets named dsi
 
 # Build rule for target.
@@ -258,6 +284,63 @@ dsi: cmake_check_build_system
 dsi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsi.dir/build.make CMakeFiles/dsi.dir/build
 .PHONY : dsi/fast
+
+src/headers/PostfixNotationReader.o: src/headers/PostfixNotationReader.cpp.o
+.PHONY : src/headers/PostfixNotationReader.o
+
+# target to build an object file
+src/headers/PostfixNotationReader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_static.dir/build.make CMakeFiles/linkedlist_static.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_static.dir/build.make CMakeFiles/stack_static.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_static.dir/build.make CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_shared.dir/build.make CMakeFiles/postfix_notation_reader_shared.dir/src/headers/PostfixNotationReader.cpp.o
+.PHONY : src/headers/PostfixNotationReader.cpp.o
+
+src/headers/PostfixNotationReader.i: src/headers/PostfixNotationReader.cpp.i
+.PHONY : src/headers/PostfixNotationReader.i
+
+# target to preprocess a source file
+src/headers/PostfixNotationReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_static.dir/build.make CMakeFiles/linkedlist_static.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_static.dir/build.make CMakeFiles/stack_static.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_static.dir/build.make CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_shared.dir/build.make CMakeFiles/postfix_notation_reader_shared.dir/src/headers/PostfixNotationReader.cpp.i
+.PHONY : src/headers/PostfixNotationReader.cpp.i
+
+src/headers/PostfixNotationReader.s: src/headers/PostfixNotationReader.cpp.s
+.PHONY : src/headers/PostfixNotationReader.s
+
+# target to generate assembly for a file
+src/headers/PostfixNotationReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_static.dir/build.make CMakeFiles/linkedlist_static.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_static.dir/build.make CMakeFiles/stack_static.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_static.dir/build.make CMakeFiles/postfix_notation_reader_static.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/src/headers/PostfixNotationReader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_shared.dir/build.make CMakeFiles/postfix_notation_reader_shared.dir/src/headers/PostfixNotationReader.cpp.s
+.PHONY : src/headers/PostfixNotationReader.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -293,11 +376,13 @@ src/source/LinkedList.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/src/source/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_static.dir/build.make CMakeFiles/postfix_notation_reader_static.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/src/source/LinkedList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_shared.dir/build.make CMakeFiles/postfix_notation_reader_shared.dir/src/source/LinkedList.cpp.o
 .PHONY : src/source/LinkedList.cpp.o
 
 src/source/LinkedList.i: src/source/LinkedList.cpp.i
@@ -310,11 +395,13 @@ src/source/LinkedList.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/src/source/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_static.dir/build.make CMakeFiles/postfix_notation_reader_static.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/src/source/LinkedList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_shared.dir/build.make CMakeFiles/postfix_notation_reader_shared.dir/src/source/LinkedList.cpp.i
 .PHONY : src/source/LinkedList.cpp.i
 
 src/source/LinkedList.s: src/source/LinkedList.cpp.s
@@ -327,11 +414,13 @@ src/source/LinkedList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_static.dir/build.make CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_static.dir/build.make CMakeFiles/time_measurer_static.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_static.dir/build.make CMakeFiles/file_reader_static.dir/src/source/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_static.dir/build.make CMakeFiles/postfix_notation_reader_static.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist_shared.dir/build.make CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_shared.dir/build.make CMakeFiles/stack_shared.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue_shared.dir/build.make CMakeFiles/queue_shared.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/time_measurer_shared.dir/build.make CMakeFiles/time_measurer_shared.dir/src/source/LinkedList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_reader_shared.dir/build.make CMakeFiles/file_reader_shared.dir/src/source/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/postfix_notation_reader_shared.dir/build.make CMakeFiles/postfix_notation_reader_shared.dir/src/source/LinkedList.cpp.s
 .PHONY : src/source/LinkedList.cpp.s
 
 # Help Target
@@ -347,12 +436,17 @@ help:
 	@echo "... file_reader_static"
 	@echo "... linkedlist_shared"
 	@echo "... linkedlist_static"
+	@echo "... postfix_notation_reader_shared"
+	@echo "... postfix_notation_reader_static"
 	@echo "... queue_shared"
 	@echo "... queue_static"
 	@echo "... stack_shared"
 	@echo "... stack_static"
 	@echo "... time_measurer_shared"
 	@echo "... time_measurer_static"
+	@echo "... src/headers/PostfixNotationReader.o"
+	@echo "... src/headers/PostfixNotationReader.i"
+	@echo "... src/headers/PostfixNotationReader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libqueue_static.a"
   "/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libqueue_static.pdb"
+  "CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o"
+  "CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o.d"
   "CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o"
   "CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o.d"
 )

@@ -73,27 +73,43 @@ CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o: CMakeFiles/linkedl
 CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
 CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o: CMakeFiles/linkedlist_shared.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o -MF CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o.d -o CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o -MF CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o.d -o CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
 
 CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp > CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp > CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.i
 
 CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.s
+
+CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/linkedlist_shared.dir/flags.make
+CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
+CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/linkedlist_shared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o -MF CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o.d -o CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
+
+CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp > CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.i
+
+CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp -o CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.s
 
 # Object files for target linkedlist_shared
 linkedlist_shared_OBJECTS = \
-"CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o"
+"CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o" \
+"CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o"
 
 # External object files for target linkedlist_shared
 linkedlist_shared_EXTERNAL_OBJECTS =
 
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_shared.so: CMakeFiles/linkedlist_shared.dir/src/source/LinkedList.cpp.o
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_shared.so: CMakeFiles/linkedlist_shared.dir/src/headers/PostfixNotationReader.cpp.o
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_shared.so: CMakeFiles/linkedlist_shared.dir/build.make
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_shared.so: CMakeFiles/linkedlist_shared.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_shared.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/liblinkedlist_shared.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linkedlist_shared.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

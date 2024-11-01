@@ -5,6 +5,7 @@
 #include "./headers/Stack.h"
 #include "./headers/Queue.h"
 #include "./headers/FileReader.h"
+#include "./headers/PostfixNotationReader.h"
 
 void testLinkedList() {
     LinkedList<int> list;
@@ -143,15 +144,44 @@ void testQueue() {
 void testFileReader() {
     Queue<std::string> queue;
     Stack<std::string> stack;
-    FileReader<std::string> reader("/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/input.txt");
+    reader::FileReader<std::string> reader("/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/input.txt");
     reader.process_file(&queue);
     reader.process_file(&stack);
 }
 
+void test_postfix_notation_reader() {
+    using namespace reader;
+
+    // Prepare test file
+    const std::string test_file = "test_input.txt";
+    std::ofstream test_stream(test_file);
+    assert(test_stream.is_open());
+    test_stream << "3 4 + 5 * 6 -"; // Expected data in the file
+    test_stream.close();
+
+    // Test in_file method
+    postfix_notation_reader reader = postfix_notation_reader::in_file(test_file);
+    
+    // Test get method
+    std::vector<std::string> result = postfix_notation_reader::get();
+    
+    // Expected output after splitting
+    std::vector<std::string> expected = {"3", "4", "+", "5", "*", "6", "-"};
+
+    // Check if the result matches the expected output
+    assert(result == expected);
+
+    // Clean up test file
+    std::remove(test_file.c_str());
+
+    std::cout << "Test passed!" << std::endl;
+}
+
 int main() {
-    testLinkedList();
-    testStack();
-    testQueue();
-    testFileReader();
+    //testLinkedList();
+    //testStack();
+    //testQueue();
+    //testFileReader();
+    test_postfix_notation_reader();
     return 0;
 }

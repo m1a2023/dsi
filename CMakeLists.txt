@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Define source files for the LinkedList and Stack library
 set(LIBRARY_SOURCES
     src/source/LinkedList.cpp
+    src/headers/PostfixNotationReader.cpp
     # Add other source files if needed
 )
 
@@ -21,6 +22,7 @@ set(LIBRARY_HEADERS
     src/headers/Queue.h
     src/headers/IDataStructure.h
     src/headers/Node.h
+    src/headers/PostfixNotationReader.h
 )
 
 find_package(spdlog REQUIRED)
@@ -40,6 +42,7 @@ add_library(stack_static STATIC ${LIBRARY_SOURCES} "src/headers/Stack.h")
 add_library(queue_static STATIC ${LIBRARY_SOURCES} "src/headers/Queue.h")
 add_library(time_measurer_static STATIC ${LIBRARY_SOURCES} "src/headers/TimeMeasurer.h")
 add_library(file_reader_static STATIC ${LIBRARY_SOURCES} "src/headers/FileReader.h")
+add_library(postfix_notation_reader_static STATIC ${LIBRARY_SOURCES} "src/headers/PostfixNotationReader.h")
 
 # Create static libraries
 add_library(linkedlist_shared SHARED ${LIBRARY_SOURCES} "src/headers/LinkedList.h")
@@ -47,6 +50,7 @@ add_library(stack_shared SHARED ${LIBRARY_SOURCES} "src/headers/Stack.h")
 add_library(queue_shared SHARED ${LIBRARY_SOURCES} "src/headers/Queue.h")
 add_library(time_measurer_shared SHARED ${LIBRARY_SOURCES} "src/headers/TimeMeasurer.h")
 add_library(file_reader_shared SHARED ${LIBRARY_SOURCES} "src/headers/FileReader.h")
+add_library(postfix_notation_reader_shared SHARED ${LIBRARY_SOURCES} "src/headers/PostfixNotationReader.h")
 
 # Set output directories for the libraries
 set_target_properties(linkedlist_static PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
@@ -54,12 +58,14 @@ set_target_properties(stack_static PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_
 set_target_properties(queue_static PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 set_target_properties(time_measurer_static PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 set_target_properties(file_reader_static PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
+set_target_properties(postfix_notation_reader_static PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 
 set_target_properties(linkedlist_shared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 set_target_properties(stack_shared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 set_target_properties(queue_shared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 set_target_properties(time_measurer_shared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 set_target_properties(file_reader_shared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
+set_target_properties(postfix_notation_reader_shared PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 
 # Set the output directory for the executable
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/bin)
@@ -75,5 +81,6 @@ target_link_libraries(
     queue_shared 
     time_measurer_shared
     file_reader_shared
+    postfix_notation_reader_shared
     spdlog::spdlog
 )

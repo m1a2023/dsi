@@ -73,27 +73,43 @@ CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o: CMakeFiles/queue_static
 CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
 CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o: CMakeFiles/queue_static.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o -MF CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o.d -o CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o -MF CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o.d -o CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp
 
 CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp > CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp > CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.i
 
 CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/source/LinkedList.cpp -o CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.s
+
+CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/queue_static.dir/flags.make
+CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o: /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
+CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o: CMakeFiles/queue_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o -MF CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o.d -o CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o -c /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp
+
+CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp > CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.i
+
+CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/src/headers/PostfixNotationReader.cpp -o CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.s
 
 # Object files for target queue_static
 queue_static_OBJECTS = \
-"CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o"
+"CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o" \
+"CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o"
 
 # External object files for target queue_static
 queue_static_EXTERNAL_OBJECTS =
 
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libqueue_static.a: CMakeFiles/queue_static.dir/src/source/LinkedList.cpp.o
+/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libqueue_static.a: CMakeFiles/queue_static.dir/src/headers/PostfixNotationReader.cpp.o
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libqueue_static.a: CMakeFiles/queue_static.dir/build.make
 /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libqueue_static.a: CMakeFiles/queue_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libqueue_static.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library /home/qpwesuf/dev/algorithms/dynamical-stuctures-implementation/dsi/dsi/bin/linux/lib/libqueue_static.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/queue_static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/queue_static.dir/link.txt --verbose=$(VERBOSE)
 

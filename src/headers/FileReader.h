@@ -8,7 +8,7 @@
 #include <spdlog/async.h>
 #include <spdlog/sinks/basic_file_sink.h>
 
-namespace dsi {
+namespace reader {
     template <typename T> class FileReader{
     public:
         FileReader(const std::string& filename);
