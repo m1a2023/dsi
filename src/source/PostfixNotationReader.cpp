@@ -1,3 +1,5 @@
+#ifndef POSTFIXNOTATIONREADER
+#define POSTFIXNOTATIONREADER
 #include "../headers/PostfixNotationReader.h"
 
 std::string reader::postfix_notation_reader::file;
@@ -51,3 +53,4 @@ std::vector<std::string> reader::postfix_notation_reader::handle_data() {
 
     return l;
 }
+#endif

@@ -6,6 +6,7 @@
 #include "./headers/Queue.h"
 #include "./headers/FileReader.h"
 #include "./headers/PostfixNotationReader.h"
+#include "./headers/PostfixNotationTranslator.h"
 
 void testLinkedList() {
     LinkedList<int> list;
@@ -183,5 +184,14 @@ int main() {
     testQueue();
     testFileReader();
     test_postfix_notation_reader();
+
+    using namespace reader;
+    std::vector<std::string> vec {"1", "+", "2", "*", "9", "sin", "1"};
+    auto pnt = reader::postfix_notation_translator::in_vector(vec);
+    auto v = pnt.get();
+
+    for (auto p = v.begin(); p != v.end(); p++) {
+        std::cout << *p << std::endl;
+    }
     return 0;
 }

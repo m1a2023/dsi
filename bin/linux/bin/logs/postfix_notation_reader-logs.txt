@@ -1,0 +1,240 @@
+[2024-11-02 15:23:11.582] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-02 15:23:11.582] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-02 15:23:11.582] [postfix_logger] [info] splitting string...
+[2024-11-02 15:23:11.582] [postfix_logger] [info] added 3 to verctor
+[2024-11-02 15:23:11.582] [postfix_logger] [info] added 4 to verctor
+[2024-11-02 15:23:11.582] [postfix_logger] [info] added + to verctor
+[2024-11-02 15:23:11.582] [postfix_logger] [info] added 5 to verctor
+[2024-11-02 15:23:11.582] [postfix_logger] [info] added * to verctor
+[2024-11-02 15:23:11.582] [postfix_logger] [info] added 6 to verctor
+[2024-11-02 15:23:11.582] [postfix_logger] [info] added - to verctor
+[2024-11-02 16:32:35.053] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-02 16:32:35.053] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-02 16:32:35.053] [postfix_logger] [info] splitting string...
+[2024-11-02 16:32:35.053] [postfix_logger] [info] added 3 to verctor
+[2024-11-02 16:32:35.053] [postfix_logger] [info] added 4 to verctor
+[2024-11-02 16:32:35.053] [postfix_logger] [info] added + to verctor
+[2024-11-02 16:32:35.053] [postfix_logger] [info] added 5 to verctor
+[2024-11-02 16:32:35.053] [postfix_logger] [info] added * to verctor
+[2024-11-02 16:32:35.053] [postfix_logger] [info] added 6 to verctor
+[2024-11-02 16:32:35.053] [postfix_logger] [info] added - to verctor
+[2024-11-02 17:03:53.902] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-02 17:03:53.902] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-02 17:03:53.902] [postfix_logger] [info] splitting string...
+[2024-11-02 17:03:53.902] [postfix_logger] [info] added 3 to verctor
+[2024-11-02 17:03:53.902] [postfix_logger] [info] added 4 to verctor
+[2024-11-02 17:03:53.902] [postfix_logger] [info] added + to verctor
+[2024-11-02 17:03:53.902] [postfix_logger] [info] added 5 to verctor
+[2024-11-02 17:03:53.902] [postfix_logger] [info] added * to verctor
+[2024-11-02 17:03:53.902] [postfix_logger] [info] added 6 to verctor
+[2024-11-02 17:03:53.902] [postfix_logger] [info] added - to verctor
+[2024-11-02 17:05:08.756] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-02 17:05:08.756] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-02 17:05:08.756] [postfix_logger] [info] splitting string...
+[2024-11-02 17:05:08.757] [postfix_logger] [info] added 3 to verctor
+[2024-11-02 17:05:08.757] [postfix_logger] [info] added 4 to verctor
+[2024-11-02 17:05:08.757] [postfix_logger] [info] added + to verctor
+[2024-11-02 17:05:08.757] [postfix_logger] [info] added 5 to verctor
+[2024-11-02 17:05:08.757] [postfix_logger] [info] added * to verctor
+[2024-11-02 17:05:08.757] [postfix_logger] [info] added 6 to verctor
+[2024-11-02 17:05:08.757] [postfix_logger] [info] added - to verctor
+[2024-11-02 21:56:25.104] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-02 21:56:25.104] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-02 21:56:25.104] [postfix_logger] [info] splitting string...
+[2024-11-02 21:56:25.104] [postfix_logger] [info] added 3 to verctor
+[2024-11-02 21:56:25.104] [postfix_logger] [info] added 4 to verctor
+[2024-11-02 21:56:25.104] [postfix_logger] [info] added + to verctor
+[2024-11-02 21:56:25.104] [postfix_logger] [info] added 5 to verctor
+[2024-11-02 21:56:25.104] [postfix_logger] [info] added * to verctor
+[2024-11-02 21:56:25.104] [postfix_logger] [info] added 6 to verctor
+[2024-11-02 21:56:25.104] [postfix_logger] [info] added - to verctor
+[2024-11-02 22:00:32.993] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-02 22:00:32.993] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-02 22:00:32.993] [postfix_logger] [info] splitting string...
+[2024-11-02 22:00:32.994] [postfix_logger] [info] added 3 to verctor
+[2024-11-02 22:00:32.994] [postfix_logger] [info] added 4 to verctor
+[2024-11-02 22:00:32.994] [postfix_logger] [info] added + to verctor
+[2024-11-02 22:00:32.994] [postfix_logger] [info] added 5 to verctor
+[2024-11-02 22:00:32.994] [postfix_logger] [info] added * to verctor
+[2024-11-02 22:00:32.994] [postfix_logger] [info] added 6 to verctor
+[2024-11-02 22:00:32.994] [postfix_logger] [info] added - to verctor
+[2024-11-02 23:16:08.144] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-02 23:16:08.144] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-02 23:16:08.144] [postfix_logger] [info] splitting string...
+[2024-11-02 23:16:08.144] [postfix_logger] [info] added 3 to verctor
+[2024-11-02 23:16:08.144] [postfix_logger] [info] added 4 to verctor
+[2024-11-02 23:16:08.144] [postfix_logger] [info] added + to verctor
+[2024-11-02 23:16:08.144] [postfix_logger] [info] added 5 to verctor
+[2024-11-02 23:16:08.144] [postfix_logger] [info] added * to verctor
+[2024-11-02 23:16:08.144] [postfix_logger] [info] added 6 to verctor
+[2024-11-02 23:16:08.144] [postfix_logger] [info] added - to verctor
+[2024-11-02 23:46:33.097] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-02 23:46:33.097] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-02 23:46:33.097] [postfix_logger] [info] splitting string...
+[2024-11-02 23:46:33.097] [postfix_logger] [info] added 3 to verctor
+[2024-11-02 23:46:33.097] [postfix_logger] [info] added 4 to verctor
+[2024-11-02 23:46:33.097] [postfix_logger] [info] added + to verctor
+[2024-11-02 23:46:33.097] [postfix_logger] [info] added 5 to verctor
+[2024-11-02 23:46:33.097] [postfix_logger] [info] added * to verctor
+[2024-11-02 23:46:33.097] [postfix_logger] [info] added 6 to verctor
+[2024-11-02 23:46:33.097] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:17:23.814] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:17:23.815] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:17:23.815] [postfix_logger] [info] splitting string...
+[2024-11-03 01:17:23.815] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:17:23.815] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:17:23.815] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:17:23.815] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:17:23.815] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:17:23.815] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:17:23.815] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:26:39.113] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:26:39.113] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:26:39.113] [postfix_logger] [info] splitting string...
+[2024-11-03 01:26:39.113] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:26:39.113] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:26:39.113] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:26:39.113] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:26:39.113] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:26:39.113] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:26:39.113] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:28:05.615] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:28:05.615] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:28:05.615] [postfix_logger] [info] splitting string...
+[2024-11-03 01:28:05.615] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:28:05.615] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:28:05.615] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:28:05.615] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:28:05.615] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:28:05.615] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:28:05.615] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:30:46.107] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:30:46.107] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:30:46.107] [postfix_logger] [info] splitting string...
+[2024-11-03 01:30:46.107] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:30:46.107] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:30:46.107] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:30:46.107] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:30:46.107] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:30:46.107] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:30:46.107] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:33:18.591] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:33:18.591] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:33:18.591] [postfix_logger] [info] splitting string...
+[2024-11-03 01:33:18.591] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:33:18.591] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:33:18.591] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:33:18.591] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:33:18.591] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:33:18.591] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:33:18.591] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:37:53.377] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:37:53.377] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:37:53.377] [postfix_logger] [info] splitting string...
+[2024-11-03 01:37:53.377] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:37:53.377] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:37:53.377] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:37:53.377] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:37:53.377] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:37:53.377] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:37:53.377] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:40:54.785] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:40:54.785] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:40:54.785] [postfix_logger] [info] splitting string...
+[2024-11-03 01:40:54.785] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:40:54.785] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:40:54.785] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:40:54.785] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:40:54.785] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:40:54.785] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:40:54.785] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:45:07.402] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:45:07.402] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:45:07.402] [postfix_logger] [info] splitting string...
+[2024-11-03 01:45:07.402] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:45:07.402] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:45:07.402] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:45:07.402] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:45:07.402] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:45:07.402] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:45:07.402] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:48:51.661] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:48:51.661] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:48:51.661] [postfix_logger] [info] splitting string...
+[2024-11-03 01:48:51.661] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:48:51.661] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:48:51.661] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:48:51.661] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:48:51.661] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:48:51.661] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:48:51.661] [postfix_logger] [info] added - to verctor
+[2024-11-03 01:50:06.871] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 01:50:06.871] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 01:50:06.871] [postfix_logger] [info] splitting string...
+[2024-11-03 01:50:06.871] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 01:50:06.871] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 01:50:06.871] [postfix_logger] [info] added + to verctor
+[2024-11-03 01:50:06.871] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 01:50:06.871] [postfix_logger] [info] added * to verctor
+[2024-11-03 01:50:06.871] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 01:50:06.871] [postfix_logger] [info] added - to verctor
+[2024-11-03 02:08:26.584] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 02:08:26.584] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 02:08:26.584] [postfix_logger] [info] splitting string...
+[2024-11-03 02:08:26.584] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 02:08:26.584] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 02:08:26.584] [postfix_logger] [info] added + to verctor
+[2024-11-03 02:08:26.584] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 02:08:26.584] [postfix_logger] [info] added * to verctor
+[2024-11-03 02:08:26.584] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 02:08:26.584] [postfix_logger] [info] added - to verctor
+[2024-11-03 02:31:30.870] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 02:31:30.870] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 02:31:30.870] [postfix_logger] [info] splitting string...
+[2024-11-03 02:31:30.870] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 02:31:30.870] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 02:31:30.870] [postfix_logger] [info] added + to verctor
+[2024-11-03 02:31:30.870] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 02:31:30.870] [postfix_logger] [info] added * to verctor
+[2024-11-03 02:31:30.870] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 02:31:30.870] [postfix_logger] [info] added - to verctor
+[2024-11-03 02:34:40.693] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 02:34:40.693] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 02:34:40.693] [postfix_logger] [info] splitting string...
+[2024-11-03 02:34:40.693] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 02:34:40.693] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 02:34:40.693] [postfix_logger] [info] added + to verctor
+[2024-11-03 02:34:40.693] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 02:34:40.693] [postfix_logger] [info] added * to verctor
+[2024-11-03 02:34:40.693] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 02:34:40.693] [postfix_logger] [info] added - to verctor
+[2024-11-03 02:36:50.959] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 02:36:50.959] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 02:36:50.959] [postfix_logger] [info] splitting string...
+[2024-11-03 02:36:50.959] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 02:36:50.959] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 02:36:50.959] [postfix_logger] [info] added + to verctor
+[2024-11-03 02:36:50.959] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 02:36:50.959] [postfix_logger] [info] added * to verctor
+[2024-11-03 02:36:50.959] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 02:36:50.959] [postfix_logger] [info] added - to verctor
+[2024-11-03 02:55:59.124] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 02:55:59.124] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 02:55:59.124] [postfix_logger] [info] splitting string...
+[2024-11-03 02:55:59.124] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 02:55:59.124] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 02:55:59.124] [postfix_logger] [info] added + to verctor
+[2024-11-03 02:55:59.124] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 02:55:59.124] [postfix_logger] [info] added * to verctor
+[2024-11-03 02:55:59.124] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 02:55:59.124] [postfix_logger] [info] added - to verctor
+[2024-11-03 02:56:26.412] [postfix_logger] [info] postfix_notation_reader::file = test_input.txt
+[2024-11-03 02:56:26.412] [postfix_logger] [info] postfix_notation_reader::data.append(3 4 + 5 * 6 -)
+[2024-11-03 02:56:26.412] [postfix_logger] [info] splitting string...
+[2024-11-03 02:56:26.412] [postfix_logger] [info] added 3 to verctor
+[2024-11-03 02:56:26.412] [postfix_logger] [info] added 4 to verctor
+[2024-11-03 02:56:26.412] [postfix_logger] [info] added + to verctor
+[2024-11-03 02:56:26.412] [postfix_logger] [info] added 5 to verctor
+[2024-11-03 02:56:26.412] [postfix_logger] [info] added * to verctor
+[2024-11-03 02:56:26.412] [postfix_logger] [info] added 6 to verctor
+[2024-11-03 02:56:26.412] [postfix_logger] [info] added - to verctor

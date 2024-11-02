@@ -1,0 +1,26 @@
+[2024-11-03 02:34:40.693] [postfix_notation_translator] [info] it's ok
+[2024-11-03 02:34:40.693] [postfix_notation_translator] [info] get(/vector/)
+[2024-11-03 02:34:40.693] [postfix_notation_translator] [info] element
+[2024-11-03 02:34:40.693] [postfix_notation_translator] [info] element
+[2024-11-03 02:34:40.693] [postfix_notation_translator] [info] swaped elements
+[2024-11-03 02:36:50.959] [postfix_notation_translator] [info] added (/vector/)
+[2024-11-03 02:36:50.959] [postfix_notation_translator] [info] get(/vector/)
+[2024-11-03 02:36:50.959] [postfix_notation_translator] [info] element
+[2024-11-03 02:36:50.959] [postfix_notation_translator] [info] element
+[2024-11-03 02:36:50.959] [postfix_notation_translator] [info] swaped elements
+[2024-11-03 02:55:59.124] [postfix_notation_translator] [info] added (/vector/)
+[2024-11-03 02:55:59.124] [postfix_notation_translator] [info] get(/vector/)
+[2024-11-03 02:55:59.124] [postfix_notation_translator] [info] element
+[2024-11-03 02:55:59.124] [postfix_notation_translator] [info] element
+[2024-11-03 02:55:59.124] [postfix_notation_translator] [info] swaped elements
+[2024-11-03 02:55:59.124] [postfix_notation_translator] [info] element
+[2024-11-03 02:55:59.124] [postfix_notation_translator] [info] swaped elements
+[2024-11-03 02:56:26.412] [postfix_notation_translator] [info] added (/vector/)
+[2024-11-03 02:56:26.412] [postfix_notation_translator] [info] get(/vector/)
+[2024-11-03 02:56:26.412] [postfix_notation_translator] [info] element
+[2024-11-03 02:56:26.412] [postfix_notation_translator] [info] element
+[2024-11-03 02:56:26.412] [postfix_notation_translator] [info] swaped elements
+[2024-11-03 02:56:26.412] [postfix_notation_translator] [info] element
+[2024-11-03 02:56:26.412] [postfix_notation_translator] [info] swaped elements
+[2024-11-03 02:56:26.412] [postfix_notation_translator] [info] element
+[2024-11-03 02:56:26.412] [postfix_notation_translator] [info] swaped elements
