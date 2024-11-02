@@ -1,6 +1,7 @@
 #include <iostream>
 #include <functional>
 #include <chrono>
+#include "IDataStructure.h"
 
 namespace dsi {
     template <typename T>
@@ -14,6 +15,7 @@ namespace dsi {
         double measure_action(std::function<T()> function);
 
     private:
+        IDataStructure<T> *data_structure;
 
         //data_structure
     };
@@ -22,7 +24,7 @@ namespace dsi {
     TimeMeasurer<T>::TimeMeasurer(/*data_struct*/) {
         //this->data_struct
     }
-
+    
     template <typename T>
     TimeMeasurer<T>::~TimeMeasurer() {}
 
