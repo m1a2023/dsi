@@ -22,5 +22,6 @@ namespace reader {
         
         static std::vector<std::string> handle_data();   
         static bool is_math_action(const std::string& a);
+        static bool is_number(const std::string& token);
     };
 }
