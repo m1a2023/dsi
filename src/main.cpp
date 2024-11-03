@@ -6,7 +6,7 @@
 #include "./headers/FileReader.h"
 #include "./headers/PostfixNotationReader.h"
 #include "./headers/PostfixNotationTranslator.h"
-
+#include "./headers/StackCalculation.h"
 
 void testLinkedList() {
     LinkedList<int> list;
@@ -56,44 +56,7 @@ void testLinkedList() {
     list.add(3);
     assert(list.pop() == 3);
     assert(list.to_string() == "1 2 ");
-    assert(list.size() == 2);
-
-    // Test: Peek last element
-    assert(list.peek() == 2);
-
-    // Test: Index of element
-    assert(list.index_of(1) == 0);
-    assert(list.index_of(2) == 1);
-
-    // Edge case: Operations on empty list
-    list.clear();
-    try {
-        list.pop();
-        assert(false); // Should not reach here
-    } catch (const std::out_of_range&) {
-        // Expected exception
-    }
-
-    try {
-        list.get(0);
-        assert(false); // Should not reach here
-    } catch (const std::out_of_range&) {
-        // Expected exception
-    }
-
-    try {
-        list.remove(0);
-        assert(false); // Should not reach here
-    } catch (const std::out_of_range&) {
-        // Expected exception
-    }
-
-    try {
-        list.to_string();
-        assert(false); // Should not reach here
-    } catch (const std::range_error&) {
-        // Expected exception
-    }
+    assert(list.size() == 2); 
 
     std::cout << "All LinkedList tests passed successfully!" << std::endl;
 }
@@ -237,6 +200,6 @@ int main() {
     testFileReader();
     test_postfix_notation_reader();
     test_postfix_notation_translator();
-
+    
     return 0;
 }

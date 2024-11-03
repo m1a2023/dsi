@@ -12,7 +12,6 @@ set(LIBRARY_SOURCES
     src/source/LinkedList.cpp
     src/source/PostfixNotationReader.cpp
     src/source/PostfixNotationTranslator.cpp
-    # Add other source files if needed
 )
 
 # Include directories for headers
@@ -36,25 +35,13 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/bin)
 
 # Create shared libraries
-add_library(linkedlist_shared SHARED ${LIBRARY_SOURCES})
-add_library(stack_shared SHARED ${LIBRARY_SOURCES})
-add_library(queue_shared SHARED ${LIBRARY_SOURCES})
-add_library(time_measurer_shared SHARED ${LIBRARY_SOURCES})
-add_library(file_reader_shared SHARED ${LIBRARY_SOURCES})
-add_library(postfix_notation_reader_shared SHARED ${LIBRARY_SOURCES})
-add_library(postfix_notation_translator_shared SHARED ${LIBRARY_SOURCES})
+add_library(lib_shared SHARED ${LIBRARY_SOURCES})
 
 # Create the executable
 add_executable(dsi src/main.cpp)
 
 # Link the executable with the shared libraries
 target_link_libraries(dsi
-    linkedlist_shared 
-    stack_shared
-    queue_shared 
-    time_measurer_shared
-    file_reader_shared
-    postfix_notation_reader_shared
-    postfix_notation_translator_shared
+    lib_shared
     spdlog::spdlog
 )
