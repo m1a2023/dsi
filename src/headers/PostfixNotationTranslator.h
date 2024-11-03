@@ -23,5 +23,6 @@ namespace reader {
         static std::vector<std::string> handle_data();   
         static bool is_math_action(const std::string& a);
         static bool is_number(const std::string& token);
+        static bool is_unary_function(const std::string& token);
     };
 }

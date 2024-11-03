@@ -1,12 +1,12 @@
 #include <iostream>
 #include <cassert>
-
 #include "./headers/LinkedList.h"
 #include "./headers/Stack.h"
 #include "./headers/Queue.h"
 #include "./headers/FileReader.h"
 #include "./headers/PostfixNotationReader.h"
 #include "./headers/PostfixNotationTranslator.h"
+
 
 void testLinkedList() {
     LinkedList<int> list;
@@ -178,20 +178,65 @@ void test_postfix_notation_reader() {
     std::cout << "Test passed!" << std::endl;
 }
 
+void test_postfix_notation_translator() {
+    // Test case 1: Simple arithmetic expression
+    std::vector<std::string> input1 = {"3", "+", "4"};
+    auto translator = reader::postfix_notation_translator::in_vector(input1);
+    auto result1 = translator.get();
+    auto exp = std::vector<std::string>{"3", "4", "+"};
+    assert(result1 == exp);
+    std::cout << "Test case 1 passed." << std::endl;
+    
+    // Test case 2: Order of operations
+    std::vector<std::string> input2 = {"3", "+", "4", "*", "2"};
+    translator.in_vector(input2);
+    auto result2 = translator.get();
+    exp = {"3", "4", "2", "*", "+"};
+    assert(result2 == exp);
+    std::cout << "Test case 2 passed." << std::endl;
+
+    // Test case 3: Parentheses
+    std::vector<std::string> input3 = {"(", "3", "+", "4", ")", "*", "2"};
+    translator.in_vector(input3);
+    auto result3 = translator.get();
+    exp = {"3", "4", "+", "2", "*"};
+    assert(result3 == exp);
+    std::cout << "Test case 3 passed." << std::endl;
+
+    // Test case 4: Exponents and unary functions
+    std::vector<std::string> input4 = {"sin", "(", "30", ")", "+", "2", "^", "3"};
+    translator.in_vector(input4);
+    auto result4 = translator.get();
+    exp = {"30", "sin", "2", "3", "^", "+"};
+    assert(result4 == exp);
+    std::cout << "Test case 4 passed." << std::endl;
+
+    // Test case 5: Mixed operations
+    std::vector<std::string> input5 = {"(", "3", "+", "4", ")", "*", "(", "2", "-", "1", ")"};
+    translator.in_vector(input5);
+    auto result5 = translator.get();
+    exp = {"3", "4", "+", "2", "1", "-", "*"};
+    assert(result5 == exp);
+    std::cout << "Test case 5 passed." << std::endl;
+
+    // Test case 6: Unary operation
+    std::vector<std::string> input6 = {"cos", "(", "0", ")", "*", "2"};
+    translator.in_vector(input6);
+    auto result6 = translator.get();
+    exp = {"0", "cos", "2", "*"};
+    assert(result6 == exp);
+    std::cout << "Test case 6 passed." << std::endl;
+
+    std::cout << "All test cases passed!" << std::endl;
+}
+
 int main() {
     testLinkedList();
     testStack();
     testQueue();
     testFileReader();
     test_postfix_notation_reader();
+    test_postfix_notation_translator();
 
-    using namespace reader;
-    std::vector<std::string> vec {"1", "+", "2", "*", "9", "sin", "1"};
-    auto pnt = reader::postfix_notation_translator::in_vector(vec);
-    auto v = pnt.get();
-
-    for (auto p = v.begin(); p != v.end(); p++) {
-        std::cout << *p << std::endl;
-    }
     return 0;
 }

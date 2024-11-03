@@ -1,6 +1,7 @@
 #include "../headers/PostfixNotationTranslator.h"
-#include "../headers/Stack.h"
+//#include "../headers/Stack.h"
 #include <stack>
+
 std::vector<std::string> reader::postfix_notation_translator::vec;
 std::shared_ptr<spdlog::logger> reader::postfix_notation_translator::logger = nullptr;
 
@@ -27,63 +28,66 @@ reader::postfix_notation_translator::get() {
 std::vector<std::string> 
 reader::postfix_notation_translator::handle_data() {
     std::vector<std::string> output;
-    dsi::Stack<std::string> operators; // Using dsi::Stack instead of std::stack
+    std::stack<std::string> operators; 
 
-    // Operator precedence and associativity mapping
     std::unordered_map<std::string, int> precedence {
         {"+", 1}, {"-", 1},
-        {"*", 2}, {"/", 2},
-        {"^", 3}
+        {"*", 2}, {"/", 2}, 
+        {"sin", 3}, {"cos", 3}, {"sqrt", 3}, {"ln", 3},
+        {"^", 4}
     };
 
     std::unordered_map<std::string, bool> right_associative {
         {"^", true}
     };
-
+    
     for (const auto& token : vec) {
         if (is_number(token)) {
             output.push_back(token);
-            logger->info("Added number {} to output", token);
         } else if (is_math_action(token)) {
-            while (!operators.is_empty() && operators.peek() != "(" &&
-                   ((right_associative.count(token) && precedence[token] < precedence[operators.peek()]) ||
-                    (!right_associative.count(token) && precedence[token] <= precedence[operators.peek()]))) {
-                
-                // Safe pop and peek
-                if (!operators.is_empty()) {
-                    output.push_back(operators.pop());
-                    logger->info("Moved operator to output");
+            if (is_unary_function(token)) {
+                operators.push(token);
+            } else {
+                while (!operators.empty() &&
+                       (precedence[operators.top()] > precedence[token] || 
+                        (precedence[operators.top()] == precedence[token] && !right_associative[token]))) {
+                    output.push_back(operators.top());
+                    operators.pop();
                 }
+                operators.push(token);
             }
-            operators.push(token);
-            logger->info("Pushed operator {} to stack", token);
         } else if (token == "(") {
             operators.push(token);
-            logger->info("Pushed ( to stack");
         } else if (token == ")") {
-            while (!operators.is_empty() && operators.peek() != "(") {
-                if (!operators.is_empty()) {
-                    output.push_back(operators.pop());
-                    logger->info("Moved operator to output");
-                }
+            while (!operators.empty() && operators.top() != "(") {
+                output.push_back(operators.top());
+                operators.pop();
             }
-            if (!operators.is_empty()) {
-                operators.pop(); // Discard the "("
-                logger->info("Popped ( from stack");
+            if (!operators.empty()) {
+                operators.pop(); // pop the '('
+            }
+            if (!operators.empty() && is_unary_function(operators.top())) {
+                output.push_back(operators.top());
+                operators.pop();
             }
         }
     }
 
-    // Empty remaining operators
-    while (!operators.is_empty()) {
-        output.push_back(operators.pop());
-        logger->info("Moved remaining operator to output");
+    while (!operators.empty()) {
+        output.push_back(operators.top());
+        operators.pop();
     }
 
     return output;
 }
+
+bool reader::postfix_notation_translator::is_unary_function(const std::string& token) {
+    return (token == "cos" || token == "sin" || token == "sqrt" || token == "ln");
+}
+
 bool reader::postfix_notation_translator::is_math_action(const std::string& a) {
-    return (a == "+" || a == "-" || a == "*" || a == "/" || a == "^");
+    return (a == "+" || a == "-" || a == "*" || a == "/" || a == "^" || 
+            a == "cos" || a == "sin" || a == "sqrt" || a == "ln");
 }
 
 bool reader::postfix_notation_translator::is_number(const std::string& token) {
