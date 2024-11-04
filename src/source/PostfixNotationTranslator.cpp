@@ -1,27 +1,21 @@
 #include "../headers/PostfixNotationTranslator.h"
-//#include "../headers/Stack.h"
 #include <stack>
 
 std::vector<std::string> reader::postfix_notation_translator::vec;
-std::shared_ptr<spdlog::logger> reader::postfix_notation_translator::logger = nullptr;
+std::shared_ptr<spdlog::logger> reader::postfix_notation_translator::logger = spdlog::basic_logger_mt("postfix_notation_translator", "logs/postfix-notation-translator-logs.txt");;
 
-reader::postfix_notation_translator::postfix_notation_translator() {
-    if (!logger) {
-        logger = spdlog::basic_logger_mt("postfix_notation_translator", "logs/postfix-notation-translator.txt");
-    }
-}
+reader::postfix_notation_translator::postfix_notation_translator() { }
 
 reader::postfix_notation_translator 
 reader::postfix_notation_translator::in_vector(const std::vector<std::string>& vec) {
     postfix_notation_translator::vec = vec;
-    postfix_notation_translator instance;
-    postfix_notation_translator::logger->info("added vector");
-    return instance;
+    postfix_notation_translator::logger->info("added vector {}", fmt::join(vec, ", "));
+    return postfix_notation_translator();
 }
 
 std::vector<std::string>
 reader::postfix_notation_translator::get() {
-    postfix_notation_translator::logger->info("converting to postfix notation");
+    postfix_notation_translator::logger->info("converting to postfix notation...");
     return postfix_notation_translator::handle_data();
 }
 
@@ -42,31 +36,40 @@ reader::postfix_notation_translator::handle_data() {
     };
     
     for (const auto& token : vec) {
-        if (is_number(token)) {
+     if (is_number(token)) {
+            postfix_notation_translator::logger->info("Token '{}' identified as number", token);
             output.push_back(token);
         } else if (is_math_action(token)) {
+            postfix_notation_translator::logger->info("Token '{}' identified as operator", token);
             if (is_unary_function(token)) {
+                postfix_notation_translator::logger->info("Unary function '{}' pushed to stack", token);
                 operators.push(token);
             } else {
                 while (!operators.empty() &&
                        (precedence[operators.top()] > precedence[token] || 
                         (precedence[operators.top()] == precedence[token] && !right_associative[token]))) {
+                    postfix_notation_translator::logger->info("Operator '{}' popped to output due to precedence", operators.top());
                     output.push_back(operators.top());
                     operators.pop();
                 }
                 operators.push(token);
+                postfix_notation_translator::logger->info("Operator '{}' pushed to stack", token);
             }
         } else if (token == "(") {
+            postfix_notation_translator::logger->info("Left parenthesis '(' pushed to stack");
             operators.push(token);
         } else if (token == ")") {
+            postfix_notation_translator::logger->info("Right parenthesis ')' encountered, popping operators until '('");
             while (!operators.empty() && operators.top() != "(") {
                 output.push_back(operators.top());
                 operators.pop();
             }
             if (!operators.empty()) {
-                operators.pop(); // pop the '('
+                operators.pop();
+                postfix_notation_translator::logger->info("Left parenthesis '(' popped from stack");
             }
             if (!operators.empty() && is_unary_function(operators.top())) {
+                postfix_notation_translator::logger->info("Unary function '{}' popped to output after ')'", operators.top());
                 output.push_back(operators.top());
                 operators.pop();
             }
@@ -74,10 +77,12 @@ reader::postfix_notation_translator::handle_data() {
     }
 
     while (!operators.empty()) {
+        postfix_notation_translator::logger->info("Remaining operator '{}' popped to output", operators.top());
         output.push_back(operators.top());
         operators.pop();
     }
 
+    postfix_notation_translator::logger->info("Postfix notation conversion complete: {}", fmt::join(output, ", "));
     return output;
 }
 

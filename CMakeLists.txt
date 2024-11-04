@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Project name and version
-project(dsi VERSION 1.0.2)
+project(dsi VERSION 1.0.9)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 11)

@@ -43,7 +43,7 @@ namespace reader {
     template <typename T>
     FileReader<T>::FileReader(const std::string& filename) : filename(filename) {
         this->file_reader_logger = spdlog::basic_logger_mt("file_reader_logger", "logs/file-reader-logs.txt");
-        this->file_reader_logger->info("New FileReader was created");
+        this->file_reader_logger->info("FileReader created: {}", typeid(this).name());
         this->list = new LinkedList<T>();
     }
 
