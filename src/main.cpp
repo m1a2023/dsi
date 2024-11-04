@@ -7,6 +7,7 @@
 #include "./headers/PostfixNotationReader.h"
 #include "./headers/PostfixNotationTranslator.h"
 #include "./headers/StackCalculation.h"
+#include "./headers/TimeMeasurer.h"
 
 void testLinkedList() {
     LinkedList<int> list;
@@ -193,6 +194,53 @@ void test_postfix_notation_translator() {
     std::cout << "All test cases passed!" << std::endl;
 }
 
+void test_time_measurer() {
+    // Create a mock data structure and wrap it in a TimeMeasurer
+    //auto data_structure = new Stack<int>();
+    dsi::TimeMeasurer<int> time_measurer(new Queue<int>());
+
+    // Test push
+    time_measurer.push(42);
+    std::cout << "Push test passed." << std::endl;
+
+    // Test peek
+    int peeked = time_measurer.peek();
+    std::cout << "Peek test result: " << peeked << std::endl;
+
+    // Test pop
+    int popped = time_measurer.pop();
+    std::cout << "Pop test result: " << popped << std::endl;
+
+    // Test size
+    int size = time_measurer.size();
+    std::cout << "Size test result: " << size << std::endl;
+
+    // Test clear
+    // time_measurer.clear();
+    // std::cout << "Clear test passed." << std::endl;
+
+    // Test is_empty
+    bool empty = time_measurer.is_empty();
+    std::cout << "Is empty test result: " << (empty ? "true" : "false") << std::endl;
+
+    // Test to_string
+    // std::string str = time_measurer.to_string();
+    //std::cout << "To string test result: " << str << std::endl;
+
+    // Test in_general and in_vector timing methods
+    long double total_time = time_measurer.in_general();
+    std::cout << "Total execution time in general: " << total_time << " seconds" << std::endl;
+
+    std::vector<long double> individual_times = time_measurer.in_vector();
+    std::cout << "Individual execution times: ";
+    for (const auto& time : individual_times) {
+        std::cout << time << " ";
+    }
+    std::cout << std::endl;
+
+    std::cout << "All tests completed successfully." << std::endl;
+}
+
 int main() {
     testLinkedList();
     testStack();
@@ -200,6 +248,12 @@ int main() {
     testFileReader();
     test_postfix_notation_reader();
     test_postfix_notation_translator();
-    
+
+    std::vector<std::string> vec {"3", "4", "+", "2", "1", "-", "*"};
+    auto res = dsi::stack_calc<double>::calculate(vec);
+    std::cout << res << std::endl;
+
+    test_time_measurer();
+
     return 0;
 }
