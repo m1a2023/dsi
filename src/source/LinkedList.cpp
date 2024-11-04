@@ -1,6 +1,6 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
-
+#include <type_traits>
 #include "../headers/LinkedList.h"
 
 using namespace dsi;
@@ -222,9 +222,14 @@ template <typename T>
 T LinkedList<T>::peek() {
     if (this->head == nullptr)
         throw std::out_of_range("Out of range exception.");
-    return tail->data;
+    return this->tail->data;
 }
 
+template <typename T>
+T LinkedList<T>::peek_first() {
+    if (!this->head) throw std::out_of_range("Out of range exception.");
+    return this->head->data;
+}
 template <typename T>
 Node<T>* LinkedList<T>::get_head() {
     return this->head; 
@@ -251,5 +256,207 @@ std::string LinkedList<T>::to_string() {
     return ss.str();
 }
 
+template <typename T>
+void LinkedList<T>::reverse() {
+    LinkedList<T> tmp;
+
+    while (!this->is_empty()) {
+        tmp.add(this->pop());
+    }
+
+    while (!tmp.is_empty()) {
+        this->push(tmp.pop());
+    }
+
+    return;
+}
+
+template <typename T>
+void LinkedList<T>::ftol() {
+    if (!this->head || !this->head->next) return;
+
+    Node<T>* tmp_head_p = this->head;
+    this->head = this->head->next;
+
+    this->tail->next = tmp_head_p;
+    tmp_head_p->next = nullptr;
+    this->tail = tmp_head_p;
+
+    return;
+}
+
+template <typename T>
+void LinkedList<T>::ltof() {
+    if (!this->head || !this->head->next) return;
+
+    Node<T>* tmp_head_p = this->head;
+    while (tmp_head_p->next != this->tail) {
+        tmp_head_p = tmp_head_p->next;
+    }
+
+    tmp_head_p->next = nullptr;
+
+    this->tail->next = this->head;
+    this->head = this->tail;
+    this->tail = tmp_head_p;
+
+    return;
+}
+
+template <typename T>
+int LinkedList<T>::qint() {
+    if (!this->head) throw std::range_error("list is empty");
+    if (!std::is_same<T, int>::value) return this->size();
+
+    int q = 0;
+    Node<T>* tmp_head_p = this->head;
+    while (tmp_head_p) {
+        try {
+            if (std::is_same<T, std::string>::value) {
+                std::stoi(tmp_head_p->data);
+                q++;
+            } else {
+                static_cast<int>(tmp_head_p->data);
+                q++;
+            }
+
+        } catch (std::invalid_argument& e) {
+            e.what();
+        } 
+    }
+    return q;
+}
+
+template <typename T>
+void LinkedList<T>::set() {
+    if (!this->head) return;
+
+    int index = 0;
+    Node<T>* tmp_head_p = this->head;
+
+    while (tmp_head_p) {
+        T tmp = tmp_head_p->data; 
+        int nextindex = index + 1;
+        Node<T>* n = tmp_head_p->next;
+        while (n) {
+            if (tmp == n->data) {
+                this->remove(index);
+            } else {
+                nextindex++;
+            }
+            n = n->next;
+        }
+        tmp_head_p = tmp_head_p->next;
+        index++;
+    }
+    return;
+}
+
+template <typename T>
+void LinkedList<T>::add() { //itself
+    if (!this->head) return;
+
+    Node<T>* tmp_head_p = this->head;
+
+    while (tmp_head_p) {
+        this->push(tmp_head_p->data);
+        tmp_head_p = tmp_head_p->next;
+    }
+
+    return;
+}
+
+template <typename T>
+void LinkedList<T>::add(LinkedList<T> list) { 
+
+    Node<T>* tmp_head_p = list.get_head();
+
+    while (tmp_head_p) {
+        this->push(tmp_head_p->data);
+        tmp_head_p = tmp_head_p->next;
+    }
+    return;
+}
+
+template <typename T>
+void LinkedList<T>::instoasc(T item) {
+    if (!this->head) {
+        this->push(item);
+        return;
+    }
+
+    Node<T>* is_ascend_p = this->head;
+    while (is_ascend_p->next) {
+        if (is_ascend_p->data > is_ascend_p->next->data) return;
+        is_ascend_p = is_ascend_p->next;
+    }
+
+    int index = 0;
+    Node<T>* tmp_head_p = this->head;
+    while (tmp_head_p->next->data > item) {
+        index++;
+        tmp_head_p = tmp_head_p->next;
+    }
+
+    this->insert(index, item);
+    return;
+}
+
+template <typename T>
+void LinkedList<T>::remove_by_item(T item) {
+    if (!this->head) return;
+
+    int index = this->index_of(item);
+
+    if (index > this->size()) return;
+    this->remove(index);
+
+    return;
+}
+
+template <typename T>
+void LinkedList<T>::remove_each_item(T item) {
+    Node<T>* tmp_head_p = this->head;
+
+    while (tmp_head_p) {
+        if (tmp_head_p->data == item) {
+            remove_by_item(item);
+        }
+        tmp_head_p = tmp_head_p->next;
+    }
+
+    return;
+}
+
+template <typename T>
+void LinkedList<T>::insbefore(T el, T next) {
+    if (!this->head) return;
+
+    int index = -1;
+
+    Node<T>* tmp_head_p = this->head;
+    while (tmp_head_p) {
+        if (tmp_head_p->data == next) {
+            this->insert(index + 1, el);
+            return;
+        }
+        index++;
+        tmp_head_p = tmp_head_p->next;
+    }
+
+    return;
+}
+
+template <typename T>
+void LinkedList<T>::insert_its(int index) {
+    if (!this->head || index < 0 || index > this->size()) return;
+
+    Node<T>* tmp_head_p = this->head;
+    while (tmp_head_p) {
+        this->insert(index, tmp_head_p->data);
+        tmp_head_p = tmp_head_p->next;
+        index++;
+    }
+}
 
 #endif

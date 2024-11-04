@@ -24,7 +24,7 @@ public:
     void            insert(int index, T item);
     void            insert_first(T item);
     void            insert_last(T item);
-    LinkedList<T>    copy() const;
+    LinkedList<T>   copy() const;
 
     void        remove(int index);
     void        remove_first();     
@@ -32,7 +32,7 @@ public:
     T           pop();   
     T           pop_first();           
     void        clear(); 
-    
+
     T           get(int index);
     int         index_of(T item);
     T           peek();
@@ -43,6 +43,22 @@ public:
     bool        is_empty();
     
     std::string to_string();
+
+    //additional methods
+    void        reverse();
+    void        ftol(); //first to last
+    void        ltof(); //last to first
+    int         qint(); //quantity integers
+    void        set();
+    void        insert_its(int index); //insert itself at index
+    void        instoasc(T item); // insert element to sorted by ascend list
+    void        remove_by_item(T item);
+    void        remove_each_item(T item);
+    void        insbefore(T el, T next);
+    void        add(); //itself
+    void        add(LinkedList<T> list); //another
+    void        splitby(T item); 
+    void        replace(T a, T b);
 
 private: 
     Node<T>*        head;
