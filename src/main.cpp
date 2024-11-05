@@ -8,6 +8,7 @@
 #include "./headers/PostfixNotationTranslator.h"
 #include "./headers/StackCalculation.h"
 #include "./headers/TimeMeasurer.h"
+#include "./headers/StackCalculation.h"
 
 void testLinkedList() {
     LinkedList<int> list;
@@ -242,24 +243,29 @@ void test_time_measurer() {
 }
 
 int main() {
-    // testLinkedList();
-    // testStack();
-    // testQueue();
-    // testFileReader();
-    // test_postfix_notation_reader();
-    // test_postfix_notation_translator();
+    testLinkedList();
+    testStack();
+    testQueue();
+    testFileReader();
+    test_postfix_notation_reader();
+    test_postfix_notation_translator();
+    test_time_measurer();
 
-    // std::vector<std::string> vec {"3", "4", "+", "2", "1", "-", "*"};
-    // auto res = dsi::stack_calc<double>::calculate(vec);
-    // std::cout << res << std::endl;
+    std::vector<std::string> expression1 = {"4", "sqrt", "1", "ln", "+"};  // Simple addition
+    std::vector<std::string> expression2 = {"2", "3", "4", "*", "+"};  // Addition after multiplication
+    std::vector<std::string> expression3 = {"5", "1", "2", "+", "4", "*", "+", "3", "-"};  // More complex RPN
 
-    // test_time_measurer();
+    try {
+        std::cout << "Result for expression1: " << dsi::stack_calc<int>::calculate(expression1) << std::endl;
+        std::cout << "Result for expression2: " << dsi::stack_calc<int>::calculate(expression2) << std::endl;
+        std::cout << "Result for expression3: " << dsi::stack_calc<int>::calculate(expression3) << std::endl;
+    } catch (const std::exception& e) {
+        std::cout << "Caught exception during calculation: " << e.what() << std::endl;
+    }
 
-    LinkedList<int> l;
-    for (int i = 0; i < 10; i++) { l.add(i); }
-
-    LinkedList<int> l1 = l.copy(4);
-    std::cout << l.to_string() << std::endl;;
-    std::cout << l1.to_string() << std::endl;
-    return 0;
+    std::vector<std::string> vec  = {"2", "3", "^"};
+    std::cout << dsi::stack_calc<int>::calculate(vec) << std::endl;
+    std::vector<std::string> vec1  = {"5", "1", "2", "+", "4", "*", "+", "3", "-"};
+    std::cout << dsi::stack_calc<int>::calculate(vec1) << std::endl;
+    return  0;
 }

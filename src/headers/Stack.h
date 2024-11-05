@@ -38,7 +38,7 @@ Stack<T>::~Stack() {
 template <typename T>
 T Stack<T>::pop() {
     if (list->is_empty()) 
-        throw new std::out_of_range("Out of range exception.");
+        throw std::out_of_range("Out of range exception. T Stack<T>::pop()");
     
     return list->pop();
 }

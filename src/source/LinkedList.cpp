@@ -247,7 +247,7 @@ Node<T>* LinkedList<T>::get_head() {
 
 template <typename T>
 bool LinkedList<T>::is_empty() {
-    return this->head == nullptr ? true : false;
+    return this->list_size <= 0 ? true : false;
 }
 
 template <typename T>
@@ -472,18 +472,51 @@ void LinkedList<T>::insert_its(int index) {
 template <typename T>
 std::tuple<LinkedList<T>, LinkedList<T>> 
 LinkedList<T>::splitby(T item) {
-    if (!this->head || !this->head->next) {
+    if (!this->head) {
         LinkedList<T> l = this->copy();
         return { l, *this };
-    }     
-    LinkedList<T> list;
+    } else if (!this->head->next) {
+        LinkedList<T> l = this->copy();
+        this->pop();
+        return { l, *this };
+    }
 
-    
+    int count_del = this->size() - this->index_of(item);
+    Node<T>* tmp_head_p = this->head;
+
+    //copy nodes before index
+    LinkedList<T> l = this->copy(count_del);
+
+    //del nodes after index
+    while (count_del--) {
+        this->pop();
+    }
+
+    return { l, *this };
 }
 
 template <typename T>
 void LinkedList<T>::replace(T a, T b) {
+    Node<T>* tmp_head_p = this->head;
+    bool is_end = false;  
 
+    while (tmp_head_p != nullptr) {
+        if (tmp_head_p->data == a) {
+            tmp_head_p->data = b;
+
+            if (is_end) { return; }
+            else { is_end = true; }
+            
+        } else if (tmp_head_p->data == b) {
+            tmp_head_p->data = a;
+
+            if (is_end) { return; }
+            else { is_end = true; }
+        }
+        tmp_head_p = tmp_head_p->next;
+    }
+
+    return;
 }
 
 template <typename T>

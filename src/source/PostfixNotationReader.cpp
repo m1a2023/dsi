@@ -4,7 +4,7 @@
 
 std::string reader::postfix_notation_reader::file;
 std::string reader::postfix_notation_reader::data;
-std::shared_ptr<spdlog::logger> reader::postfix_notation_reader::logger = spdlog::basic_logger_mt("postfix_logger", "logs/postfix_notation_reader-logs.txt");
+std::shared_ptr<spdlog::logger> reader::postfix_notation_reader::logger = spdlog::basic_logger_mt("postfix_notation_logger", "logs/postfix_notation_reader-logs.txt");
 
 reader::postfix_notation_reader::postfix_notation_reader() { }
 

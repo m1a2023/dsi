@@ -29,13 +29,15 @@ private:
     static dsi::Stack<T> stack;
     static std::shared_ptr<spdlog::logger> logger;
 };
+
 }
+
 
 template <typename T>
 dsi::Stack<T> dsi::stack_calc<T>::stack;
 
 template <typename T>
-std::shared_ptr<spdlog::logger> dsi::stack_calc<T>::logger = spdlog::basic_logger_mt("stack_calc", "logs/stack-calc-logs.txt"); 
+std::shared_ptr<spdlog::logger> dsi::stack_calc<T>::logger = spdlog::basic_logger_mt("stack_calculation", "logs/stack-calc-logs.txt");//spdlog::get("stack_calc") 
 
 template <typename T>
 T dsi::stack_calc<T>::calculate(const std::vector<std::string>& vec) {

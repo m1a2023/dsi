@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.10)
 project(dsi VERSION 1.0.9)
 
 # Set C++ standard
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Define source files for the LinkedList and Stack library
