@@ -15,6 +15,15 @@ LinkedList<T>::LinkedList() {
 template <typename T>
 LinkedList<T>::~LinkedList() { this->clear(); }
 
+template <typename T>
+LinkedList<T>::LinkedList(const LinkedList<T>& other) : head(nullptr), tail(nullptr), list_size(0) {
+    Node<T>* tmp = other.head;
+    while (tmp) {
+        this->push(tmp->data);  // Use push/add to add a copy of each node
+        tmp = tmp->next;
+    }
+}
+
 template <typename T> 
 void LinkedList<T>::add(T item) {
     Node<T>* node = new Node<T> (item);
@@ -230,6 +239,7 @@ T LinkedList<T>::peek_first() {
     if (!this->head) throw std::out_of_range("Out of range exception.");
     return this->head->data;
 }
+
 template <typename T>
 Node<T>* LinkedList<T>::get_head() {
     return this->head; 
@@ -458,5 +468,51 @@ void LinkedList<T>::insert_its(int index) {
         index++;
     }
 }
+
+template <typename T>
+std::tuple<LinkedList<T>, LinkedList<T>> 
+LinkedList<T>::splitby(T item) {
+    if (!this->head || !this->head->next) {
+        LinkedList<T> l = this->copy();
+        return { l, *this };
+    }     
+    LinkedList<T> list;
+
+    
+}
+
+template <typename T>
+void LinkedList<T>::replace(T a, T b) {
+
+}
+
+template <typename T>
+LinkedList<T> LinkedList<T>::copy(int index) {
+    if (this->head == nullptr) {
+        LinkedList<T> l;
+        return l;
+    }
+
+    int cin = 0;
+    LinkedList<T> l;
+    Node<T>* tmp_head_p = this->head;
+
+    while (tmp_head_p != nullptr) {
+        if (cin >= index) {
+            l.push(tmp_head_p->data);
+        }
+
+        tmp_head_p = tmp_head_p->next;
+        cin++;
+    }
+
+    return l;
+}
+
+template <typename T>
+LinkedList<T> LinkedList<T>::copy() {
+    return this->copy(0);
+}
+
 
 #endif

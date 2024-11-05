@@ -7,6 +7,7 @@
 #include <sstream>
 #include <iostream>
 #include <string>
+#include <tuple>
 #include <stdexcept>
 
 namespace dsi {
@@ -16,6 +17,7 @@ class LinkedList {
 public: 
     //constructor and destructor
     LinkedList();
+    LinkedList(const LinkedList<T>& other);
     ~LinkedList();
 
     //core methods
@@ -57,8 +59,10 @@ public:
     void        insbefore(T el, T next);
     void        add(); //itself
     void        add(LinkedList<T> list); //another
-    void        splitby(T item); 
+    std::tuple<LinkedList<T>, LinkedList<T>>  splitby(T item); 
     void        replace(T a, T b);
+    LinkedList<T> copy(int index);
+    LinkedList<T> copy();
 
 private: 
     Node<T>*        head;

@@ -242,18 +242,24 @@ void test_time_measurer() {
 }
 
 int main() {
-    testLinkedList();
-    testStack();
-    testQueue();
-    testFileReader();
-    test_postfix_notation_reader();
-    test_postfix_notation_translator();
+    // testLinkedList();
+    // testStack();
+    // testQueue();
+    // testFileReader();
+    // test_postfix_notation_reader();
+    // test_postfix_notation_translator();
 
-    std::vector<std::string> vec {"3", "4", "+", "2", "1", "-", "*"};
-    auto res = dsi::stack_calc<double>::calculate(vec);
-    std::cout << res << std::endl;
+    // std::vector<std::string> vec {"3", "4", "+", "2", "1", "-", "*"};
+    // auto res = dsi::stack_calc<double>::calculate(vec);
+    // std::cout << res << std::endl;
 
-    test_time_measurer();
+    // test_time_measurer();
 
+    LinkedList<int> l;
+    for (int i = 0; i < 10; i++) { l.add(i); }
+
+    LinkedList<int> l1 = l.copy(4);
+    std::cout << l.to_string() << std::endl;;
+    std::cout << l1.to_string() << std::endl;
     return 0;
 }
