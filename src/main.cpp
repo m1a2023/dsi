@@ -9,6 +9,7 @@
 #include "./headers/StackCalculation.h"
 #include "./headers/TimeMeasurer.h"
 #include "./headers/StackCalculation.h"
+#include "./headers/Tree.h"
 
 void testLinkedList() {
     LinkedList<int> list;
@@ -198,7 +199,7 @@ void test_postfix_notation_translator() {
 void test_time_measurer() {
     // Create a mock data structure and wrap it in a TimeMeasurer
     //auto data_structure = new Stack<int>();
-    dsi::TimeMeasurer<int> time_measurer(new Queue<int>());
+    dsi::TimeMeasurer<int> time_measurer(new Stack<int>());
 
     // Test push
     time_measurer.push(42);
@@ -267,5 +268,9 @@ int main() {
     std::cout << dsi::stack_calc<int>::calculate(vec) << std::endl;
     std::vector<std::string> vec1  = {"5", "1", "2", "+", "4", "*", "+", "3", "-"};
     std::cout << dsi::stack_calc<int>::calculate(vec1) << std::endl;
+
+    dsi::tree<int> t;
+
+    t.add(9, dsi::tree<int>::LEFT);
     return  0;
 }
