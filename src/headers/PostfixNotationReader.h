@@ -8,8 +8,6 @@
 #include <vector>
 
 namespace reader {
-
-
     class postfix_notation_reader 
     {
     public:

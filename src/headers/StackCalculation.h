@@ -34,16 +34,19 @@ private:
 
 
 template <typename T>
-dsi::Stack<T> dsi::stack_calc<T>::stack;
+dsi::Stack<T> 
+dsi::stack_calc<T>::stack;
 
 template <typename T>
-std::shared_ptr<spdlog::logger> dsi::stack_calc<T>::logger = spdlog::basic_logger_mt("stack_calculation", "logs/stack-calc-logs.txt");//spdlog::get("stack_calc") 
+std::shared_ptr<spdlog::logger> 
+dsi::stack_calc<T>::logger = spdlog::basic_logger_mt("stack_calculation", "logs/stack-calculations-logs.txt");
 
 template <typename T>
 T dsi::stack_calc<T>::calculate(const std::vector<std::string>& vec) {
     
     for (auto p = vec.begin(); p != vec.end(); p++) {
-        if (is_num(*p)) stack_calc::stack.push(static_cast<T> (std::stoi(*p)));
+        if (is_num(*p)) 
+            stack_calc::stack.push(std::stof(*p));
         else if (is_unary_function(*p)) {
             T a = stack.pop();
             auto fun = get_unary_action(*p);
@@ -57,6 +60,7 @@ T dsi::stack_calc<T>::calculate(const std::vector<std::string>& vec) {
             stack_calc<T>::logger->info("fun: {}, vals: {}, {}", *p, b, a);
         }
     }
+    
     
     stack_calc<T>::logger->info("result: {}", stack.peek());
     return stack.pop();
@@ -101,3 +105,4 @@ bool dsi::stack_calc<T>::is_math_action(const std::string& a) {
 }
 
 #endif
+

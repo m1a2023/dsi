@@ -3,8 +3,12 @@
 #include "../headers/PostfixNotationReader.h"
 
 std::string reader::postfix_notation_reader::file;
+
 std::string reader::postfix_notation_reader::data;
-std::shared_ptr<spdlog::logger> reader::postfix_notation_reader::logger = spdlog::basic_logger_mt("postfix_notation_logger", "logs/postfix_notation_reader-logs.txt");
+
+std::shared_ptr<spdlog::logger> reader::postfix_notation_reader::logger = 
+spdlog::basic_logger_mt("postfix_notation_logger", "logs/postfix-notation-reader-logs.txt");
+
 
 reader::postfix_notation_reader::postfix_notation_reader() { }
 
@@ -32,11 +36,13 @@ reader::postfix_notation_reader::in_file(const std::string& file_name) {
     return reader;
 }
 
-std::vector<std::string> reader::postfix_notation_reader::get() {
+std::vector<std::string> 
+reader::postfix_notation_reader::get() {
     return postfix_notation_reader::handle_data();
 }
 
-std::vector<std::string> reader::postfix_notation_reader::handle_data() {
+std::vector<std::string> 
+reader::postfix_notation_reader::handle_data() {
     std::vector<std::string> l;
     std::istringstream s(postfix_notation_reader::data);
     std::string tmp_data;

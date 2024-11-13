@@ -268,16 +268,19 @@ std::string LinkedList<T>::to_string() {
 
 template <typename T>
 void LinkedList<T>::reverse() {
-    LinkedList<T> tmp;
+    if (!this->head || this->size() == 1) 
+        return;
 
-    while (!this->is_empty()) {
-        tmp.add(this->pop());
+    Node<T>* tmp_head_p = this->head, *prev = nullptr, *next;
+
+    while (tmp_head_p) {
+        next = tmp_head_p->next;
+        tmp_head_p->next = prev;
+        prev = tmp_head_p;
+        tmp_head_p = next;
     }
 
-    while (!tmp.is_empty()) {
-        this->push(tmp.pop());
-    }
-
+    this->head = prev;
     return;
 }
 
@@ -313,30 +316,37 @@ void LinkedList<T>::ltof() {
     return;
 }
 
+/**
+ * ! doesn't work !
+ */
 template <typename T>
 int LinkedList<T>::qint() {
     if (!this->head) throw std::range_error("list is empty");
-    if (!std::is_same<T, int>::value) return this->size();
+    if (std::is_same<T, int>::value) return this->size();
 
     int q = 0;
     Node<T>* tmp_head_p = this->head;
+
     while (tmp_head_p) {
         try {
             if (std::is_same<T, std::string>::value) {
-                std::stoi(tmp_head_p->data);
+                std::stoi(std::to_string(tmp_head_p->data));
                 q++;
             } else {
-                static_cast<int>(tmp_head_p->data);
+                std::to_integer(tmp_head_p->data);
                 q++;
             }
 
         } catch (std::invalid_argument& e) {
-            e.what();
+            std::cout << e.what() << std::endl;
         } 
     }
     return q;
 }
 
+/**
+ * ! doesn't work correctly
+ */
 template <typename T>
 void LinkedList<T>::set() {
     if (!this->head) return;
@@ -364,29 +374,20 @@ void LinkedList<T>::set() {
 
 template <typename T>
 void LinkedList<T>::add() { //itself
-    if (!this->head) return;
-
-    Node<T>* tmp_head_p = this->head;
-
-    while (tmp_head_p) {
-        this->push(tmp_head_p->data);
-        tmp_head_p = tmp_head_p->next;
-    }
-
-    return;
+    this->insert_its(this->size());
 }
 
+/**
+ * ! doesn't work
+ */
 template <typename T>
 void LinkedList<T>::add(LinkedList<T> list) { 
 
-    Node<T>* tmp_head_p = list.get_head();
-
-    while (tmp_head_p) {
-        this->push(tmp_head_p->data);
-        tmp_head_p = tmp_head_p->next;
-    }
+    // ...
+    
     return;
 }
+
 
 template <typename T>
 void LinkedList<T>::instoasc(T item) {
@@ -424,6 +425,9 @@ void LinkedList<T>::remove_by_item(T item) {
     return;
 }
 
+/**
+ * ! doesn't work
+ */
 template <typename T>
 void LinkedList<T>::remove_each_item(T item) {
     Node<T>* tmp_head_p = this->head;
@@ -462,10 +466,11 @@ void LinkedList<T>::insert_its(int index) {
     if (!this->head || index < 0 || index > this->size()) return;
 
     Node<T>* tmp_head_p = this->head;
-    while (tmp_head_p) {
-        this->insert(index, tmp_head_p->data);
+    int count {index};
+
+    while (count--) {
+        this->insert(index++, tmp_head_p->data);
         tmp_head_p = tmp_head_p->next;
-        index++;
     }
 }
 
@@ -485,7 +490,7 @@ LinkedList<T>::splitby(T item) {
     Node<T>* tmp_head_p = this->head;
 
     //copy nodes before index
-    LinkedList<T> l = this->copy(count_del);
+    LinkedList<T> l = this->copy(this->index_of(item));
 
     //del nodes after index
     while (count_del--) {

@@ -11,6 +11,9 @@
 #include "./headers/StackCalculation.h"
 #include "./headers/Tree.h"
 
+#define POSTFIX_NOTATION_READER_TEST_FILE "./postfix-notation-reader-demo-input.txt"
+
+
 void testLinkedList() {
     LinkedList<int> list;
 
@@ -243,15 +246,7 @@ void test_time_measurer() {
     std::cout << "All tests completed successfully." << std::endl;
 }
 
-int main() {
-    testLinkedList();
-    testStack();
-    testQueue();
-    testFileReader();
-    test_postfix_notation_reader();
-    test_postfix_notation_translator();
-    test_time_measurer();
-
+void test_stack_calc() {
     std::vector<std::string> expression1 = {"4", "sqrt", "1", "ln", "+"};  // Simple addition
     std::vector<std::string> expression2 = {"2", "3", "4", "*", "+"};  // Addition after multiplication
     std::vector<std::string> expression3 = {"5", "1", "2", "+", "4", "*", "+", "3", "-"};  // More complex RPN
@@ -266,11 +261,60 @@ int main() {
 
     std::vector<std::string> vec  = {"2", "3", "^"};
     std::cout << dsi::stack_calc<int>::calculate(vec) << std::endl;
-    std::vector<std::string> vec1  = {"5", "1", "2", "+", "4", "*", "+", "3", "-"};
+    std::vector<std::string> vec1  = {"5", " 1", "2", "+", "4", "*", "+", "3", "-"};
     std::cout << dsi::stack_calc<int>::calculate(vec1) << std::endl;
+    std::cout << "stack calc test fun" << std::endl;
+}
 
-    dsi::tree<int> t;
+void test_tree() {
+        try {
+        // Create a tree of integers
+        dsi::tree<int> intTree;
 
-    t.add(9, dsi::tree<int>::LEFT);
+        // Add elements to the tree
+        intTree.add(10, dsi::tree<int>::LEFT);
+        intTree.add(20, dsi::tree<int>::RIGHT);
+
+        // Check if an element exists
+        if (intTree.contains(10)) {
+            std::cout << "10 is in the tree.\n";
+        } else {
+            std::cout << "10 is not in the tree.\n";
+        }
+
+        if (intTree.contains(15)) {
+            std::cout << "15 is in the tree.\n";
+        } else {
+            std::cout << "15 is not in the tree.\n";
+        }
+
+        // Perform in-order traversal
+        std::cout << "In-order Traversal:\n";
+        intTree.in_order_traversal();
+
+        // Perform pre-order traversal
+        std::cout << "Pre-order Traversal:\n";
+        intTree.pre_order_traversal();
+
+        // Perform post-order traversal
+        std::cout << "Post-order Traversal:\n";
+        intTree.post_order_traversal();
+
+        // Remove an element
+        std::cout << "Removing 10 from the tree.\n";
+        intTree.remove(10);
+
+        // Check size and depth
+        std::cout << "Tree size: " << intTree.size() << "\n";
+        std::cout << "Tree depth: " << intTree.depth() << "\n";
+
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << "\n";
+    }
+
+}
+
+int main() {
+
     return  0;
 }

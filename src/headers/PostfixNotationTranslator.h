@@ -7,6 +7,8 @@
 #include <spdlog/fmt/fmt.h>
 #include <spdlog/sinks/basic_file_sink.h>
 #include <vector>
+#include <algorithm> 
+#include <cctype>    
 
 namespace reader {
     class postfix_notation_translator {

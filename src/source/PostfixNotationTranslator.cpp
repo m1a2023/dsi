@@ -19,25 +19,24 @@ reader::postfix_notation_translator::get() {
     return postfix_notation_translator::handle_data();
 }
 
-std::vector<std::string> 
+std::vector<std::string>
 reader::postfix_notation_translator::handle_data() {
     std::vector<std::string> output;
-    std::stack<std::string> operators; 
+    std::stack<std::string> operators;
 
-    std::unordered_map<std::string, int> precedence {
+    std::unordered_map<std::string, int> precedence{
         {"+", 1}, {"-", 1},
-        {"*", 2}, {"/", 2}, 
+        {"*", 2}, {"/", 2},
         {"sin", 3}, {"cos", 3}, {"sqrt", 3}, {"ln", 3},
         {"^", 4}
     };
 
-    std::unordered_map<std::string, bool> right_associative {
+    std::unordered_map<std::string, bool> right_associative{
         {"^", true}
     };
-    
+
     for (const auto& token : vec) {
-     if (is_number(token)) {
-            postfix_notation_translator::logger->info("Token '{}' identified as number", token);
+        if (is_number(token)) {
             output.push_back(token);
         } else if (is_math_action(token)) {
             postfix_notation_translator::logger->info("Token '{}' identified as operator", token);
