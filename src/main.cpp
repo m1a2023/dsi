@@ -246,25 +246,6 @@ void test_time_measurer() {
     std::cout << "All tests completed successfully." << std::endl;
 }
 
-void test_stack_calc() {
-    std::vector<std::string> expression1 = {"4", "sqrt", "1", "ln", "+"};  // Simple addition
-    std::vector<std::string> expression2 = {"2", "3", "4", "*", "+"};  // Addition after multiplication
-    std::vector<std::string> expression3 = {"5", "1", "2", "+", "4", "*", "+", "3", "-"};  // More complex RPN
-
-    try {
-        std::cout << "Result for expression1: " << dsi::stack_calc<int>::calculate(expression1) << std::endl;
-        std::cout << "Result for expression2: " << dsi::stack_calc<int>::calculate(expression2) << std::endl;
-        std::cout << "Result for expression3: " << dsi::stack_calc<int>::calculate(expression3) << std::endl;
-    } catch (const std::exception& e) {
-        std::cout << "Caught exception during calculation: " << e.what() << std::endl;
-    }
-
-    std::vector<std::string> vec  = {"2", "3", "^"};
-    std::cout << dsi::stack_calc<int>::calculate(vec) << std::endl;
-    std::vector<std::string> vec1  = {"5", " 1", "2", "+", "4", "*", "+", "3", "-"};
-    std::cout << dsi::stack_calc<int>::calculate(vec1) << std::endl;
-    std::cout << "stack calc test fun" << std::endl;
-}
 
 void test_tree() {
         try {
@@ -316,5 +297,24 @@ void test_tree() {
 
 int main() {
 
+    reader::postfix_notation_reader::in_file(POSTFIX_NOTATION_READER_TEST_FILE);
+    auto input_vec = reader::postfix_notation_reader::get();
+
+    reader::postfix_notation_translator::in_vector(input_vec);
+    auto vec = reader::postfix_notation_translator::get();
+
+    auto out = dsi::stack_calc<double>::calculate(vec);
+
+
+    // LinkedList<int> list;
+    // for (int i = 0; i < 25; i++) {
+    //     list.add(i);
+    // }
+    // std::cout << list.to_string() << std::endl;
+    
+    // list.add();
+
+    // std::cout << list.to_string() << std::endl;
+    
     return  0;
 }

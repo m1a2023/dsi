@@ -464,12 +464,14 @@ void LinkedList<T>::insbefore(T el, T next) {
 template <typename T>
 void LinkedList<T>::insert_its(int index) {
     if (!this->head || index < 0 || index > this->size()) return;
+    LinkedList<T> cp = this->copy();
 
     Node<T>* tmp_head_p = this->head;
-    int count {index};
+    int count {this->size()};
 
     while (count--) {
-        this->insert(index++, tmp_head_p->data);
+        cp.ftol();
+        this->insert(index++, cp.pop());
         tmp_head_p = tmp_head_p->next;
     }
 }
