@@ -5,6 +5,7 @@
 #include <spdlog/spdlog.h>
 #include <spdlog/async.h>
 #include <spdlog/fmt/fmt.h>
+#include <spdlog/fmt/ranges.h>
 #include <spdlog/sinks/basic_file_sink.h>
 #include <vector>
 #include <algorithm> 

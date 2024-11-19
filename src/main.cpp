@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cassert>
+#include <random>
+
 #include "./headers/LinkedList.h"
 #include "./headers/Stack.h"
 #include "./headers/Queue.h"
@@ -10,10 +12,15 @@
 #include "./headers/TimeMeasurer.h"
 #include "./headers/StackCalculation.h"
 #include "./headers/Tree.h"
+#include "./headers/InnerStack.hpp"
+#include "./headers/InnerQueue.hpp"
+#include "./headers/TimeMeasurerController.hpp"
 
-#define POSTFIX_NOTATION_READER_TEST_FILE "./postfix-notation-reader-demo-input.txt"
+#define     POSTFIX_NOTATION_READER_TEST_FILE   "/home/mia/dev/csu/algo/dsi/postfix-notation-reader-demo-input.txt"
+#define     TIME_MEASURER_OUTPUT_FILE           "./all-times.txt"
 
 
+#ifdef DEBUG
 void testLinkedList() {
     LinkedList<int> list;
 
@@ -246,7 +253,6 @@ void test_time_measurer() {
     std::cout << "All tests completed successfully." << std::endl;
 }
 
-
 void test_tree() {
         try {
         // Create a tree of integers
@@ -294,27 +300,37 @@ void test_tree() {
     }
 
 }
+#endif
 
 int main() {
-
-    reader::postfix_notation_reader::in_file(POSTFIX_NOTATION_READER_TEST_FILE);
-    auto input_vec = reader::postfix_notation_reader::get();
-
-    reader::postfix_notation_translator::in_vector(input_vec);
-    auto vec = reader::postfix_notation_translator::get();
-
-    auto out = dsi::stack_calc<double>::calculate(vec);
-
-
-    // LinkedList<int> list;
-    // for (int i = 0; i < 25; i++) {
-    //     list.add(i);
-    // }
-    // std::cout << list.to_string() << std::endl;
+    // std::vector<std::string> _vec;
+    // std::vector<std::string> _vec1;
     
-    // list.add();
+    // reader::postfix_notation_reader::in_file(POSTFIX_NOTATION_READER_TEST_FILE);
+    // _vec = reader::postfix_notation_reader::get();
 
-    // std::cout << list.to_string() << std::endl;
+    // reader::postfix_notation_translator::in_vector(_vec);
+    // _vec1 = reader::postfix_notation_translator::get();
+
+    // auto out = dsi::stack_calc<double>::calculate(_vec1);
+    // std::cout << out << std::endl;
+
     
+    dsi::_time_measurer_controller<int> tmc (
+        std::vector<std::shared_ptr<TimeMeasurer<int>>> { 
+            std::make_shared<TimeMeasurer<int>>(new Stack<int>), 
+            std::make_shared<TimeMeasurer<int>>(new Queue<int>),
+            std::make_shared<TimeMeasurer<int>>(new _inner_stack<int>),
+            std::make_shared<TimeMeasurer<int>>(new _inner_queue<int>)
+        }
+    );
+
+    for (int i = 0; i < 100; i++) {
+        tmc.push(std::rand());
+    }
+
+    tmc.to_file(TIME_MEASURER_OUTPUT_FILE);
+
     return  0;
 }
+

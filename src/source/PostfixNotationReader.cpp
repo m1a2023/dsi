@@ -19,7 +19,7 @@ reader::postfix_notation_reader::in_file(const std::string& file_name) {
 
     std::ifstream f(file_name);
     if (!f.is_open()) {
-        postfix_notation_reader::logger->error("wrror while opening the file: {}", file_name);
+        postfix_notation_reader::logger->error("error while opening the file: {}", file_name);
         return reader;
     }
 

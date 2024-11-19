@@ -16,8 +16,10 @@ public:
     TimeMeasurer(IDataStructure<T>* data_structure);
     ~TimeMeasurer();
 
-    long double                 in_general();
-    std::vector<long double>    in_vector();
+    /* core methods */
+//getting time in different formats
+    long double            in_general();
+    std::vector<double>    in_vector();
 
     T                   pop();
     T                   peek();
@@ -31,6 +33,7 @@ public:
     std::string         to_string();
 
 private:
+
     IDataStructure<T>                           *data_structure;
     
     std::shared_ptr<spdlog::logger>             logger;
@@ -41,8 +44,13 @@ private:
 
 template <typename T>
 dsi::TimeMeasurer<T>::TimeMeasurer(IDataStructure<T>* data_structure) {
+    this->logger = spdlog::get("time_measurer");
+
+    if (!this->logger) {
+        this->logger = spdlog::basic_logger_mt("time_measurer", "logs/time-measurer-logs.txt");
+    }
+
     this->data_structure = data_structure;
-    this->logger = spdlog::basic_logger_mt("time_measurer", "logs/time-measurer-logs.txt");
     this->logger->info("new data structure created: {}", typeid(data_structure).name());
 }
 
@@ -63,9 +71,9 @@ long double dsi::TimeMeasurer<T>::in_general() {
 }
 
 template <typename T>
-std::vector<long double> 
+std::vector<double> 
 dsi::TimeMeasurer<T>::in_vector() {
-    std::vector<long double> vec;
+    std::vector<double> vec;
 
     for (auto p = this->times.begin(); p != this->times.end(); p++) {
         vec.push_back((*p).count());

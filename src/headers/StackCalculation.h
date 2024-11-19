@@ -10,6 +10,7 @@
 #include <functional>
 #include <exception>
 #include <stdexcept>
+#include <stack>
 
 namespace dsi { 
 template <typename T>
@@ -43,27 +44,39 @@ dsi::stack_calc<T>::logger = spdlog::basic_logger_mt("stack_calculation", "logs/
 
 template <typename T>
 T dsi::stack_calc<T>::calculate(const std::vector<std::string>& vec) {
-    
-    for (auto p = vec.begin(); p != vec.end(); p++) {
-        if (is_num(*p)) 
-            stack_calc::stack.push(std::stof(*p));
-        else if (is_unary_function(*p)) {
-            T a = stack.pop();
-            auto fun = get_unary_action(*p);
-            stack.push(fun(a));      
-            stack_calc<T>::logger->info("fun: {}, val: {}", *p, a);
-        } else {
-            T a = stack.pop();
-            T b = stack.pop();
-            auto fun = get_bin_action(*p);
-            stack.push(fun(b, a));
-            stack_calc<T>::logger->info("fun: {}, vals: {}, {}", *p, b, a);
+    for (const auto& cur : vec) { 
+        if (is_num(cur)) {
+            stack_calc::stack.push(static_cast<T>(std::stof(cur))); 
+        } else if (is_unary_function(cur)) {
+            if (stack.is_empty()) {
+                stack_calc<T>::logger->error("Stack underflow: no operand for unary function {}", cur);
+                throw std::runtime_error("Stack underflow: unary function requires one operand");
+            }
+            T a = stack.pop(); 
+            auto fun = get_unary_action(cur); 
+            stack.push(fun(a)); 
+            stack_calc<T>::logger->info("fun: {}, val: {}", cur, a);
+        } else { 
+            if (stack.size() < 2) {
+                stack_calc<T>::logger->error("Stack underflow: not enough operands for binary function {}", cur);
+                throw std::runtime_error("Stack underflow: binary function requires two operands");
+            }
+            T a = stack.pop(); 
+            T b = stack.pop(); 
+            auto fun = get_bin_action(cur); 
+            stack.push(fun(b, a)); 
+            stack_calc<T>::logger->info("fun: {}, vals: {}, {}", cur, b, a);
         }
     }
-    
-    
-    stack_calc<T>::logger->info("result: {}", stack.peek());
-    return stack.pop();
+
+    if (stack.size() != 1) {
+        stack_calc<T>::logger->error("Invalid expression: leftover items in the stack");
+        throw std::runtime_error("Invalid expression: stack must contain exactly one result");
+    }
+
+    T result = stack.pop(); // Final result
+    stack_calc<T>::logger->info("result: {}", result);
+    return result;
 }
 
 template <typename T>
