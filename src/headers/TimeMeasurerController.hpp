@@ -5,6 +5,7 @@
 #include <tuple>
 #include <fstream>
 #include <memory>
+#include <iomanip>
 
 #include <IDataStructure.h>
 #include <InnerQueue.hpp>
@@ -46,21 +47,38 @@ dsi::_time_measurer_controller<T>::_time_measurer_controller(const std::vector<s
 template <typename T>
 dsi::_time_measurer_controller<T>::~_time_measurer_controller() { }
 
-template <typename T> void 
-dsi::_time_measurer_controller<T>::to_file(const std::string &filepath) {
-    
-    std::ofstream stream(filepath);
+template <typename T>
+void dsi::_time_measurer_controller<T>::to_file(const std::string &filepath) {
+    std::ofstream stream(filepath, std::ios::out | std::ios::trunc);
 
-    if (!stream.is_open()) {
-        throw std::runtime_error("Failed to open file: " + filepath);
+    if (!stream) {
+        throw std::ios_base::failure("Failed to open file: " + filepath);
     }
 
-    for (auto measurer : this->measurers) {
-        for (auto p = measurer->in_vector().begin(); p != measurer->in_vector().end(); p++)
-        {
-            stream << *p << " ";
-        } 
-        stream << std::endl;
+    std::string line_buffer;
+    line_buffer.reserve(1024);
+
+    std::ostringstream oss;
+    oss << std::fixed << std::setprecision(12); 
+
+    for (const auto& measurer : this->measurers) {
+        const auto& data = measurer->in_vector();
+        line_buffer.clear();
+
+        for (const auto& value : data) {
+            oss.str("");
+            oss.clear();
+            
+            oss << value;
+            
+            line_buffer += oss.str() + ' ';
+        }
+
+        if (!line_buffer.empty()) {
+            line_buffer.back() = '\n';
+        }
+        
+        stream << line_buffer;
     }
 }
 

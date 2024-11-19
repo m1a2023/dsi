@@ -17,7 +17,7 @@
 #include "./headers/TimeMeasurerController.hpp"
 
 #define     POSTFIX_NOTATION_READER_TEST_FILE   "/home/mia/dev/csu/algo/dsi/postfix-notation-reader-demo-input.txt"
-#define     TIME_MEASURER_OUTPUT_FILE           "./all-times.txt"
+#define     TIME_MEASURER_OUTPUT_FILE           "./time-measurer-output-file.txt"
 
 
 #ifdef DEBUG
@@ -252,55 +252,63 @@ void test_time_measurer() {
 
     std::cout << "All tests completed successfully." << std::endl;
 }
+#endif
 
 void test_tree() {
-        try {
-        // Create a tree of integers
-        dsi::tree<int> intTree;
+    dsi::tree<int> t;
 
-        // Add elements to the tree
-        intTree.add(10, dsi::tree<int>::LEFT);
-        intTree.add(20, dsi::tree<int>::RIGHT);
+    // Add elements
+    t.add(10);
+    t.add(5);
+    t.add(15);
+    t.add(3);
+    t.add(7);
+    t.add(12);
+    t.add(18);
 
-        // Check if an element exists
-        if (intTree.contains(10)) {
-            std::cout << "10 is in the tree.\n";
-        } else {
-            std::cout << "10 is not in the tree.\n";
-        }
+    assert(t.size() == 7);
 
-        if (intTree.contains(15)) {
-            std::cout << "15 is in the tree.\n";
-        } else {
-            std::cout << "15 is not in the tree.\n";
-        }
+    // Test contains()
+    assert(t.contains(10));
+    assert(t.contains(5));
+    assert(!t.contains(20));
 
-        // Perform in-order traversal
-        std::cout << "In-order Traversal:\n";
-        intTree.in_order_traversal();
+    // Test in-order traversal
+    std::vector<int> in_order_result;
+    t.in_order_traversal([&](const int& item) { in_order_result.push_back(item); });
+    assert(in_order_result == std::vector<int>({3, 5, 7, 10, 12, 15, 18}));
 
-        // Perform pre-order traversal
-        std::cout << "Pre-order Traversal:\n";
-        intTree.pre_order_traversal();
+    // Test pre-order traversal
+    std::vector<int> pre_order_result;
+    t.pre_order_traversal([&](const int& item) { pre_order_result.push_back(item); });
+    assert(pre_order_result == std::vector<int>({10, 5, 3, 7, 15, 12, 18}));
 
-        // Perform post-order traversal
-        std::cout << "Post-order Traversal:\n";
-        intTree.post_order_traversal();
+    // Test post-order traversal
+    std::vector<int> post_order_result;
+    t.post_order_traversal([&](const int& item) { post_order_result.push_back(item); });
+    assert(post_order_result == std::vector<int>({3, 7, 5, 12, 18, 15, 10}));
 
-        // Remove an element
-        std::cout << "Removing 10 from the tree.\n";
-        intTree.remove(10);
+    // Test remove
+    t.remove(15); // Node with two children
+    assert(!t.contains(15));
+    assert(t.size() == 6);
 
-        // Check size and depth
-        std::cout << "Tree size: " << intTree.size() << "\n";
-        std::cout << "Tree depth: " << intTree.depth() << "\n";
+    t.remove(5); // Node with one child
+    assert(!t.contains(5));
+    assert(t.size() == 5);
 
-    } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << "\n";
-    }
+    t.remove(3); // Leaf node
+    assert(!t.contains(3));
+    assert(t.size() == 4);
 
+    // Verify tree structure
+    in_order_result.clear();
+    t.in_order_traversal([&](const int& item) { in_order_result.push_back(item); });
+    assert(in_order_result == std::vector<int>({7, 10, 12, 18}));
+
+    std::cout << "All tests passed!" << std::endl;
 }
-#endif
+
 
 int main() {
     // std::vector<std::string> _vec;
@@ -325,12 +333,14 @@ int main() {
         }
     );
 
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 25000; i++) {
         tmc.push(std::rand());
     }
 
+
     tmc.to_file(TIME_MEASURER_OUTPUT_FILE);
 
+    // test_tree();
     return  0;
 }
 
